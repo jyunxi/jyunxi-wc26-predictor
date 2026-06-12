@@ -1,79 +1,275 @@
 {
   "elo_snapshot_date": "2026-06-12",
   "elo_source": "https://www.eloratings.net/World.tsv",
-  "hosts": ["United States", "Mexico", "Canada"],
+  "hosts": [
+    "United States",
+    "Mexico",
+    "Canada"
+  ],
   "groups": {
     "A": [
-      {"name": "Mexico", "code": "MX", "elo": 1875},
-      {"name": "South Korea", "code": "KR", "elo": 1758},
-      {"name": "Czechia", "code": "CZ", "elo": 1740},
-      {"name": "South Africa", "code": "ZA", "elo": 1517}
+      {
+        "name": "Mexico",
+        "code": "MX",
+        "elo": 1881.0
+      },
+      {
+        "name": "South Korea",
+        "code": "KR",
+        "elo": 1786.0
+      },
+      {
+        "name": "Czechia",
+        "code": "CZ",
+        "elo": 1712.0
+      },
+      {
+        "name": "South Africa",
+        "code": "ZA",
+        "elo": 1511.0
+      }
     ],
     "B": [
-      {"name": "Switzerland", "code": "CH", "elo": 1891},
-      {"name": "Canada", "code": "CA", "elo": 1788},
-      {"name": "Bosnia and Herzegovina", "code": "BA", "elo": 1595},
-      {"name": "Qatar", "code": "QA", "elo": 1421}
+      {
+        "name": "Switzerland",
+        "code": "CH",
+        "elo": 1891.0
+      },
+      {
+        "name": "Canada",
+        "code": "CA",
+        "elo": 1788.0
+      },
+      {
+        "name": "Bosnia and Herzegovina",
+        "code": "BA",
+        "elo": 1595.0
+      },
+      {
+        "name": "Qatar",
+        "code": "QA",
+        "elo": 1421.0
+      }
     ],
     "C": [
-      {"name": "Brazil", "code": "BR", "elo": 1991},
-      {"name": "Morocco", "code": "MA", "elo": 1827},
-      {"name": "Scotland", "code": "SQ", "elo": 1782},
-      {"name": "Haiti", "code": "HT", "elo": 1548}
+      {
+        "name": "Brazil",
+        "code": "BR",
+        "elo": 1991.0
+      },
+      {
+        "name": "Morocco",
+        "code": "MA",
+        "elo": 1827.0
+      },
+      {
+        "name": "Scotland",
+        "code": "SQ",
+        "elo": 1782.0
+      },
+      {
+        "name": "Haiti",
+        "code": "HT",
+        "elo": 1548.0
+      }
     ],
     "D": [
-      {"name": "Turkiye", "code": "TR", "elo": 1911},
-      {"name": "Paraguay", "code": "PY", "elo": 1834},
-      {"name": "Australia", "code": "AU", "elo": 1777},
-      {"name": "United States", "code": "US", "elo": 1726}
+      {
+        "name": "Turkiye",
+        "code": "TR",
+        "elo": 1911.0
+      },
+      {
+        "name": "Paraguay",
+        "code": "PY",
+        "elo": 1834.0
+      },
+      {
+        "name": "Australia",
+        "code": "AU",
+        "elo": 1777.0
+      },
+      {
+        "name": "United States",
+        "code": "US",
+        "elo": 1726.0
+      }
     ],
     "E": [
-      {"name": "Ecuador", "code": "EC", "elo": 1938},
-      {"name": "Germany", "code": "DE", "elo": 1932},
-      {"name": "Ivory Coast", "code": "CI", "elo": 1695},
-      {"name": "Curacao", "code": "CW", "elo": 1434}
+      {
+        "name": "Ecuador",
+        "code": "EC",
+        "elo": 1938.0
+      },
+      {
+        "name": "Germany",
+        "code": "DE",
+        "elo": 1932.0
+      },
+      {
+        "name": "Ivory Coast",
+        "code": "CI",
+        "elo": 1695.0
+      },
+      {
+        "name": "Curacao",
+        "code": "CW",
+        "elo": 1434.0
+      }
     ],
     "F": [
-      {"name": "Netherlands", "code": "NL", "elo": 1948},
-      {"name": "Japan", "code": "JP", "elo": 1906},
-      {"name": "Sweden", "code": "SE", "elo": 1712},
-      {"name": "Tunisia", "code": "TN", "elo": 1628}
+      {
+        "name": "Netherlands",
+        "code": "NL",
+        "elo": 1948.0
+      },
+      {
+        "name": "Japan",
+        "code": "JP",
+        "elo": 1906.0
+      },
+      {
+        "name": "Sweden",
+        "code": "SE",
+        "elo": 1712.0
+      },
+      {
+        "name": "Tunisia",
+        "code": "TN",
+        "elo": 1628.0
+      }
     ],
     "G": [
-      {"name": "Belgium", "code": "BE", "elo": 1894},
-      {"name": "Iran", "code": "IR", "elo": 1772},
-      {"name": "Egypt", "code": "EG", "elo": 1696},
-      {"name": "New Zealand", "code": "NZ", "elo": 1562}
+      {
+        "name": "Belgium",
+        "code": "BE",
+        "elo": 1894.0
+      },
+      {
+        "name": "Iran",
+        "code": "IR",
+        "elo": 1772.0
+      },
+      {
+        "name": "Egypt",
+        "code": "EG",
+        "elo": 1696.0
+      },
+      {
+        "name": "New Zealand",
+        "code": "NZ",
+        "elo": 1562.0
+      }
     ],
     "H": [
-      {"name": "Spain", "code": "ES", "elo": 2157},
-      {"name": "Uruguay", "code": "UY", "elo": 1892},
-      {"name": "Cape Verde", "code": "CV", "elo": 1578},
-      {"name": "Saudi Arabia", "code": "SA", "elo": 1576}
+      {
+        "name": "Spain",
+        "code": "ES",
+        "elo": 2157.0
+      },
+      {
+        "name": "Uruguay",
+        "code": "UY",
+        "elo": 1892.0
+      },
+      {
+        "name": "Cape Verde",
+        "code": "CV",
+        "elo": 1578.0
+      },
+      {
+        "name": "Saudi Arabia",
+        "code": "SA",
+        "elo": 1576.0
+      }
     ],
     "I": [
-      {"name": "France", "code": "FR", "elo": 2063},
-      {"name": "Norway", "code": "NO", "elo": 1914},
-      {"name": "Senegal", "code": "SN", "elo": 1860},
-      {"name": "Iraq", "code": "IQ", "elo": 1607}
+      {
+        "name": "France",
+        "code": "FR",
+        "elo": 2063.0
+      },
+      {
+        "name": "Norway",
+        "code": "NO",
+        "elo": 1914.0
+      },
+      {
+        "name": "Senegal",
+        "code": "SN",
+        "elo": 1860.0
+      },
+      {
+        "name": "Iraq",
+        "code": "IQ",
+        "elo": 1607.0
+      }
     ],
     "J": [
-      {"name": "Argentina", "code": "AR", "elo": 2115},
-      {"name": "Austria", "code": "AT", "elo": 1830},
-      {"name": "Algeria", "code": "DZ", "elo": 1772},
-      {"name": "Jordan", "code": "JO", "elo": 1680}
+      {
+        "name": "Argentina",
+        "code": "AR",
+        "elo": 2115.0
+      },
+      {
+        "name": "Austria",
+        "code": "AT",
+        "elo": 1830.0
+      },
+      {
+        "name": "Algeria",
+        "code": "DZ",
+        "elo": 1772.0
+      },
+      {
+        "name": "Jordan",
+        "code": "JO",
+        "elo": 1680.0
+      }
     ],
     "K": [
-      {"name": "Portugal", "code": "PT", "elo": 1989},
-      {"name": "Colombia", "code": "CO", "elo": 1982},
-      {"name": "Uzbekistan", "code": "UZ", "elo": 1714},
-      {"name": "DR Congo", "code": "CD", "elo": 1652}
+      {
+        "name": "Portugal",
+        "code": "PT",
+        "elo": 1989.0
+      },
+      {
+        "name": "Colombia",
+        "code": "CO",
+        "elo": 1982.0
+      },
+      {
+        "name": "Uzbekistan",
+        "code": "UZ",
+        "elo": 1714.0
+      },
+      {
+        "name": "DR Congo",
+        "code": "CD",
+        "elo": 1652.0
+      }
     ],
     "L": [
-      {"name": "England", "code": "EN", "elo": 2024},
-      {"name": "Croatia", "code": "HR", "elo": 1912},
-      {"name": "Panama", "code": "PA", "elo": 1730},
-      {"name": "Ghana", "code": "GH", "elo": 1510}
+      {
+        "name": "England",
+        "code": "EN",
+        "elo": 2024.0
+      },
+      {
+        "name": "Croatia",
+        "code": "HR",
+        "elo": 1912.0
+      },
+      {
+        "name": "Panama",
+        "code": "PA",
+        "elo": 1730.0
+      },
+      {
+        "name": "Ghana",
+        "code": "GH",
+        "elo": 1510.0
+      }
     ]
   }
 }

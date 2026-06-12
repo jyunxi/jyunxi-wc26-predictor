@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026世界杯智能预测平台</title>
+<style>
+  :root{
+    --bg:#0b1120; --card:#131c31; --card2:#0f1729; --line:#1f2c47;
+    --txt:#e6edf7; --muted:#8aa0c2; --accent:#33d17a; --accent2:#4da3ff;
+    --gold:#f5c542; --red:#ff6b6b; --purple:#b48cff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font:15px/1.5 'Segoe UI',system-ui,-apple-system,sans-serif;padding-bottom:80px}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+  header{background:linear-gradient(135deg,#101a30,#16233f 60%,#1a2c52);border-bottom:1px solid var(--line);padding:28px 0 0}
+  h1{font-size:28px;letter-spacing:.5px}
+  h1 .ball{color:var(--accent)}
+  .sub{color:var(--muted);margin-top:4px;font-size:13.5px}
+  .badges{margin:12px 0 14px;display:flex;gap:8px;flex-wrap:wrap}
+  .badge{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:4px 12px;font-size:12.5px;color:var(--muted)}
+  .badge b{color:var(--txt)}
+  /* tabs */
+  .tabs{display:flex;gap:4px;flex-wrap:wrap}
+  .tab{background:transparent;border:none;color:var(--muted);padding:11px 18px;font-size:14px;font-weight:600;cursor:pointer;border-bottom:3px solid transparent}
+  .tab.on{color:var(--txt);border-bottom-color:var(--accent)}
+  .tab:hover{color:var(--txt)}
+  section{display:none;margin-top:24px}
+  section.on{display:block}
+  h2{font-size:18px;margin:26px 0 14px;display:flex;align-items:center;gap:10px}
+  h2::after{content:"";flex:1;height:1px;background:var(--line)}
+  /* champion bars */
+  .bar-row{display:grid;grid-template-columns:160px 1fr 60px;align-items:center;gap:12px;margin-bottom:8px}
+  .bar-row .nm{font-weight:600;text-align:right;font-size:14px}
+  .bar-track{background:var(--card2);border-radius:6px;height:24px;overflow:hidden;border:1px solid var(--line)}
+  .bar-fill{height:100%;background:linear-gradient(90deg,var(--accent2),var(--accent));transition:width .5s}
+  .bar-pct{font-weight:700;color:var(--accent);font-size:14px}
+  /* tables */
+  table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden;font-size:13.5px}
+  th{background:var(--card2);color:var(--muted);font-weight:600;text-align:right;padding:8px 10px;font-size:11.5px;text-transform:uppercase;letter-spacing:.4px}
+  th:first-child,td:first-child{text-align:left}
+  td{padding:7px 10px;border-top:1px solid var(--line);text-align:right;font-variant-numeric:tabular-nums}
+  tr:hover td{background:#16213a}
+  .up{color:var(--accent)} .dn{color:var(--red)}
+  .heat{display:inline-block;min-width:46px;padding:2px 6px;border-radius:4px}
+  /* match cards */
+  .day{color:var(--accent2);font-size:13px;font-weight:700;margin:18px 0 8px;letter-spacing:1px}
+  .match{background:var(--card);border:1px solid var(--line);border-radius:10px;margin-bottom:8px;overflow:hidden}
+  .mhead{display:grid;grid-template-columns:34px 1fr 110px 1fr 170px;align-items:center;gap:8px;padding:10px 14px;cursor:pointer}
+  .mhead:hover{background:#16213a}
+  .mhead .g{color:var(--muted);font-size:11px;border:1px solid var(--line);border-radius:4px;text-align:center;padding:1px 0}
+  .mhead .h{text-align:right;font-weight:600}
+  .mhead .a{font-weight:600}
+  .score{text-align:center;font-size:17px;font-weight:800;color:var(--gold)}
+  .score small{display:block;font-size:10px;color:var(--muted);font-weight:400}
+  .score.played{color:var(--accent)}
+  .wdl{display:flex;height:14px;border-radius:4px;overflow:hidden;font-size:9px;line-height:14px;text-align:center;color:#04130a}
+  .wdl .w{background:var(--accent2)} .wdl .d{background:#5a6c8f} .wdl .l{background:var(--red)}
+  .mbody{display:none;border-top:1px solid var(--line);padding:14px;background:var(--card2)}
+  .match.open .mbody{display:flex;gap:26px;flex-wrap:wrap}
+  .hm{border-collapse:collapse}
+  .hm td,.hm th{border:1px solid var(--line);width:34px;height:26px;text-align:center;font-size:10.5px;padding:0}
+  .hm th{background:var(--card);color:var(--muted)}
+  .tops{font-size:13px;color:var(--muted)}
+  .tops b{color:var(--txt)}
+  .tops .pl{color:var(--gold);font-weight:700}
+  /* groups */
+  .grid{display:grid;gap:14px}
+  .groups{grid-template-columns:repeat(auto-fill,minmax(265px,1fr))}
+  .gcard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .gcard h3{font-size:13px;color:var(--accent2);margin-bottom:8px;letter-spacing:1px}
+  .trow{display:grid;grid-template-columns:1fr 36px 50px 50px;gap:6px;padding:3px 0;font-size:13px;align-items:center}
+  .trow.hdr{color:var(--muted);font-size:10.5px;text-transform:uppercase}
+  .trow span:nth-child(n+2){text-align:right;font-variant-numeric:tabular-nums}
+  .pq{color:var(--accent);font-weight:600}
+  /* factors */
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin-bottom:16px}
+  .panel h3{font-size:15px;margin-bottom:12px;color:var(--accent2)}
+  .ctl{display:grid;grid-template-columns:230px 1fr 70px;gap:14px;align-items:center;margin-bottom:10px;font-size:13.5px}
+  .ctl input[type=range]{width:100%;accent-color:var(--accent)}
+  .ctl .val{text-align:right;font-weight:700;color:var(--accent)}
+  .ftable td input{width:64px;background:var(--card2);border:1px solid var(--line);color:var(--txt);border-radius:5px;padding:3px 6px;text-align:right;font-size:13px}
+  .newsline{font-size:12px;color:var(--muted)}
+  .newsline .cred{color:var(--purple)}
+  .rumor{color:var(--gold)}
+  button.go{background:linear-gradient(90deg,var(--accent2),var(--accent));border:none;color:#04130a;font-weight:800;font-size:14px;padding:10px 26px;border-radius:8px;cursor:pointer}
+  button.go:disabled{opacity:.5;cursor:wait}
+  .simbar{display:flex;align-items:center;gap:14px;margin:6px 0 18px;flex-wrap:wrap}
+  select{background:var(--card);color:var(--txt);border:1px solid var(--line);border-radius:6px;padding:7px 10px;font-size:13.5px}
+  #prog{flex:1;height:6px;background:var(--card2);border-radius:3px;overflow:hidden;min-width:120px}
+  #prog div{height:100%;width:0;background:var(--accent);transition:width .15s}
+  /* bracket */
+  .round{margin-bottom:20px}
+  .round h3{font-size:14px;color:var(--accent2);margin-bottom:8px}
+  .bk{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:8px}
+  .bkm{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 12px;font-size:13px;display:grid;grid-template-columns:1fr 70px 1fr;align-items:center}
+  .bkm .h{text-align:right;font-weight:600}.bkm .a{font-weight:600}
+  .bkm .s{text-align:center;color:var(--gold);font-weight:800}
+  .bkm .adv{color:var(--accent)}
+  .note{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:14px 16px;color:var(--muted);font-size:12.5px;margin-top:26px}
+  .note b{color:var(--txt)}
+  @media(max-width:680px){.mhead{grid-template-columns:1fr 90px 1fr;gap:4px}.mhead .g,.mhead .wdl{display:none}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1><span class="ball">&#9917;</span> 2026世界杯智能预测平台</h1>
+    <div class="sub">FIFA World Cup 2026 &middot; 动态Elo + 自适应ML &middot; 球员层/更衣室/假消息/底蕴/裁判/市场信号多因子 &middot; 浏览器内蒙特卡洛模拟</div>
+    <div class="badges" id="badges"></div>
+    <nav class="tabs">
+      <button class="tab on" data-t="overview">总览</button>
+      <button class="tab" data-t="matches">逐场预测</button>
+      <button class="tab" data-t="groups">小组形势</button>
+      <button class="tab" data-t="bracket">预测对阵树</button>
+      <button class="tab" data-t="players">球员</button>
+      <button class="tab" data-t="factors">因子实验室</button>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="simbar">
+    <button class="go" id="runBtn">&#9654; 重新模拟</button>
+    <select id="simsN">
+      <option value="2000">2,000 次(快速)</option>
+      <option value="5000" selected>5,000 次</option>
+      <option value="20000">20,000 次(精确)</option>
+    </select>
+    <div id="prog"><div></div></div>
+    <span id="simInfo" style="color:var(--muted);font-size:12.5px"></span>
+  </div>
+
+  <section id="overview" class="on">
+    <h2>&#127942; 夺冠概率</h2>
+    <div id="champ"></div>
+    <h2>&#128202; 实力榜与各轮晋级概率</h2>
+    <table id="power"><thead><tr>
+      <th>球队</th><th>组</th><th>有效Elo</th><th>因子</th>
+      <th>32强</th><th>16强</th><th>8强</th><th>4强</th><th>决赛</th><th>夺冠</th>
+    </tr></thead><tbody></tbody></table>
+  </section>
+
+  <section id="matches">
+    <h2>&#9917; 每场比赛逐场预测</h2>
+    <div style="color:var(--muted);font-size:13px;margin-bottom:10px">
+      点击任意比赛展开完整比分概率热力图。已赛场次显示真实比分(下方为模型赛前预测)。
+      彩条 = 胜 / 平 / 负概率。&#9888; 标记 = 市场资金流向与模型明显背离。</div>
+    <div id="fixtures"></div>
+  </section>
+
+  <section id="groups">
+    <h2>&#128221; 小组形势预测</h2>
+    <div class="grid groups" id="groupCards"></div>
+  </section>
+
+  <section id="bracket">
+    <h2>&#129351; 最可能的淘汰赛路径</h2>
+    <div style="color:var(--muted);font-size:13px;margin-bottom:14px">
+      由各组最可能的出线结果构建,每场对决用比分模型推演。这只是数千种剧本中最可能的一种 &mdash;
+      完整概率见"总览"。</div>
+    <div id="bracketView"></div>
+  </section>
+
+  <section id="players">
+    <h2>&#129333; 各队阵容:伤停、红黄牌与赛事状态</h2>
+    <div style="color:var(--muted);font-size:13px;margin-bottom:12px">
+      伤病/停赛按球员重要度扣减Elo;停赛(红牌或累计2黄)只影响该队接下来N场(逐场预测中自动生效)。
+      状态分由赛事中真实数据(传球%、过人%、进球、助攻)对比位置基准线算出,同时影响球队实力与更衣室士气。
+      状态/禁赛场数可手动修改;数据随每日更新刷新。</div>
+    <div class="grid groups" id="squads" style="grid-template-columns:repeat(auto-fill,minmax(360px,1fr))"></div>
+  </section>
+
+  <section id="factors">
+    <h2>&#129514; 因子实验室</h2>
+    <div class="panel">
+      <h3>全局因子权重</h3>
+      <div class="ctl"><span>更衣室因子权重</span><input type="range" id="wLocker" min="0" max="2" step="0.1" value="1"><span class="val" id="wLockerV">1.0</span></div>
+      <div class="ctl"><span>假消息过滤(传闻信任度)</span><input type="range" id="rumorTrust" min="0" max="1" step="0.05" value="0.5"><span class="val" id="rumorTrustV">0.50</span></div>
+      <div class="ctl"><span>世界杯底蕴因子权重</span><input type="range" id="wPed" min="0" max="2" step="0.1" value="1"><span class="val" id="wPedV">1.0</span></div>
+      <div class="ctl"><span>东道主主场加成(Elo)</span><input type="range" id="hostB" min="0" max="150" step="10" value="100"><span class="val" id="hostBV">100</span></div>
+      <div class="ctl"><span>球员因子权重(伤停/红黄牌/状态)</span><input type="range" id="wPlayer" min="0" max="2" step="0.1" value="1"><span class="val" id="wPlayerV">1.0</span></div>
+      <div class="ctl"><span>俱乐部联赛强度权重</span><input type="range" id="wLeague" min="0" max="2" step="0.1" value="1"><span class="val" id="wLeagueV">1.0</span></div>
+      <div class="ctl"><span>年龄曲线权重</span><input type="range" id="wAge" min="0" max="2" step="0.1" value="1"><span class="val" id="wAgeV">1.0</span></div>
+      <div class="ctl"><span>世界杯经验与大赛心理权重</span><input type="range" id="wExp" min="0" max="2" step="0.1" value="1"><span class="val" id="wExpV">1.0</span></div>
+      <div class="ctl"><span>市场信号权重(资金流向混合)</span><input type="range" id="wMarket" min="0" max="1" step="0.05" value="0.3"><span class="val" id="wMarketV">0.30</span></div>
+      <div style="color:var(--muted);font-size:12.5px;margin-top:8px">
+        更衣室 = &Sigma; 新闻影响力 &times; 可信度(可信度 &lt; 0.7 视为传闻,再乘以传闻信任度)。
+        底蕴 = 历史世界杯战绩指数(以30为中心)。市场信号 = 有大额资金异动报道时,
+        将模型胜率向市场盘口按此权重混合;背离超过12%会打 &#9888; 标记。
+        调整任何滑块即时重算所有比分;点<b>重新模拟</b>刷新晋级/夺冠概率。</div>
+    </div>
+    <div class="panel">
+      <h3>球队士气与新闻(更衣室 + 假消息因子)</h3>
+      <table class="ftable"><thead><tr>
+        <th>球队</th><th>底蕴</th><th>新闻士气</th><th>手动微调 (-5..+5)</th><th>净Elo修正</th>
+      </tr></thead><tbody id="fteams"></tbody></table>
+    </div>
+  </section>
+
+  <div class="note" id="method"></div>
+</div>
+
+<script>
+const D = /*__DATA__*/null;
+
+/* ---------------- state ---------------- */
+const S = {
+  wLocker: 1.0, rumorTrust: 0.5, wPed: 1.0, hostBonus: 100, wPlayer: 1.0, wLeague: 1.0, wAge: 1.0, wExp: 1.0, wMarket: 0.3,
+  tweaks: {},          // manual morale tweak per team
+  playerOv: {},        // manual player overrides: "Team|Name" -> {st, ban}
+};
+try { Object.assign(S, JSON.parse(localStorage.getItem('wc26S') || '{}')); } catch(e){}
+const saveS = () => { try{ localStorage.setItem('wc26S', JSON.stringify(S)); }catch(e){} };
+
+/* ---------------- model (mirrors engine/model.py) ---------------- */
+const HOSTS = new Set(D.hosts);
+const CAL = D.calibration;
+const BASE_GOALS = 2.55 * CAL.goal_mult;
+const teams = {};            // name -> {elo, group, code}
+for (const t of D.teams) teams[t.name] = t;
+const F = D.factors;
+
+/* ---------- referee + betting-market signals ---------- */
+const SIG = D.signals || {referees: {}, assignments: {}, market: {}, baseline: {}};
+/* Chinese display names for teams */
+const CN = {"Mexico":"墨西哥","South Korea":"韩国","Czechia":"捷克","South Africa":"南非",
+"Switzerland":"瑞士","Canada":"加拿大","Bosnia and Herzegovina":"波黑","Qatar":"卡塔尔",
+"Brazil":"巴西","Morocco":"摩洛哥","Scotland":"苏格兰","Haiti":"海地","Turkiye":"土耳其",
+"Paraguay":"巴拉圭","Australia":"澳大利亚","United States":"美国","Ecuador":"厄瓜多尔",
+"Germany":"德国","Ivory Coast":"科特迪瓦","Curacao":"库拉索","Netherlands":"荷兰",
+"Japan":"日本","Sweden":"瑞典","Tunisia":"突尼斯","Belgium":"比利时","Iran":"伊朗",
+"Egypt":"埃及","New Zealand":"新西兰","Spain":"西班牙","Uruguay":"乌拉圭",
+"Cape Verde":"佛得角","Saudi Arabia":"沙特","France":"法国","Norway":"挪威",
+"Senegal":"塞内加尔","Iraq":"伊拉克","Argentina":"阿根廷","Austria":"奥地利",
+"Algeria":"阿尔及利亚","Jordan":"约旦","Portugal":"葡萄牙","Colombia":"哥伦比亚",
+"Uzbekistan":"乌兹别克斯坦","DR Congo":"刚果(金)","England":"英格兰","Croatia":"克罗地亚",
+"Panama":"巴拿马","Ghana":"加纳"};
+const cn = n => CN[n] || n;
+
+/* ---------- player layer: injuries, suspensions, in-tournament form ---------- */
+const P = D.players || {teams: {}, pos_baselines: {}};
+const playedKeyRaw = {};
+for (const m of D.matches) playedKeyRaw[m.home + '|' + m.away] = m;
+function pdata(team){
+  return (P.teams[team] || []).map(p => Object.assign({}, p, S.playerOv[team + '|' + p.n] || {}));
+}
+function playerForm(p){
+  const s = p.stats;
+  if (!s || s.min < 45) return 0;
+  const b = P.pos_baselines[p.pos] || {pass: 82, drib: 50, g90: 0.2};
+  let f = 0;
+  const g90 = s.g / (s.min / 90);
+  if (p.pos !== 'GK') f += Math.max(-1, Math.min(1, (g90 - b.g90) * 2.2));      // scoring vs baseline
+  if (s.pass != null) f += Math.max(-0.7, Math.min(0.7, (s.pass - b.pass) / 7)); // pass completion
+  if (s.drib != null && b.drib > 0)
+    f += Math.max(-0.4, Math.min(0.4, (s.drib - b.drib) / 18));                  // dribble success
+  if (s.a) f += Math.min(0.5, s.a * 0.25);                                       // assists
+  return Math.max(-2, Math.min(2, f));
+}
+/* club-league strength: q_eff = q x (1 + (coef - 1) x league weight) */
+const LEAGUES = D.players && D.players.leagues || {};
+const AGE_CURVE = P.age_curve || {GK:[27,34],DEF:[25,31],MID:[24,30],FWD:[23,29],
+  pre_decline:0.015, post_decline:0.02, min_young:0.85, min_old:0.72};
+const POS_W = P.pos_weights || {GK:0.8,DEF:1.0,MID:1.1,FWD:1.0};
+function ageCoef(p){
+  if (p.age == null) return 1;
+  const [lo, hi] = AGE_CURVE[p.pos] || [24,30];
+  let c = 1;
+  if (p.age < lo) c = Math.max(AGE_CURVE.min_young, 1 - AGE_CURVE.pre_decline * (lo - p.age));
+  else if (p.age > hi) c = Math.max(AGE_CURVE.min_old, 1 - AGE_CURVE.post_decline * (p.age - hi));
+  return 1 + (c - 1) * (S.wAge != null ? S.wAge : 1);
+}
+function qEff(p){
+  const coef = LEAGUES[p.lg] != null ? LEAGUES[p.lg] : 0.7;
+  return p.q * (1 + (coef - 1) * (S.wLeague != null ? S.wLeague : 1)) * ageCoef(p);
+}
+function injRisk(p){   // expected-absence Elo cost from injury proneness (worse when older)
+  const base = (p.inj == null ? 1 : p.inj) + (p.age > 32 ? 0.5 : 0);
+  return missWeight(qEff(p)) * base * 0.05;
+}
+const missWeight = q => Math.max(0, q - 5) * 9;   // Elo cost of losing a player (q_eff 10 -> 45)
+/* upIdx=null: current availability (Monte Carlo). upIdx=j: team's j-th upcoming match
+   (suspension `ban` counts down over the next matches only). */
+function isOut(p, upIdx){
+  if (p.st === 'injured') return 1;
+  if (p.st === 'doubtful') return 0.5;
+  const banned = upIdx == null ? (p.ban > 0 || p.st === 'suspended')
+                               : (p.ban > upIdx || (p.st === 'suspended' && p.ban === 0 && upIdx === 0));
+  return banned ? 1 : 0;
+}
+function playerLayer(team, upIdx){
+  let adj = 0, formMorale = 0;
+  const posTot = {}, posAvail = {};             // positional combination tracking
+  for (const p of pdata(team)){
+    const q = qEff(p);                          // quality x league strength x age curve
+    posTot[p.pos] = (posTot[p.pos] || 0) + q;
+    const out = isOut(p, upIdx);
+    if (out){
+      adj -= missWeight(q) * out;
+      posAvail[p.pos] = (posAvail[p.pos] || 0) + q * (1 - out);
+      continue;
+    }
+    posAvail[p.pos] = (posAvail[p.pos] || 0) + q;
+    adj -= injRisk(p);                          // expected future-absence discount
+    const wExpW = S.wExp != null ? S.wExp : 1;
+    adj += Math.min(p.wc || 0, 3) / 3 * (q / 10) * 4 * wExpW;   // WC experience (small, capped)
+    adj += (p.mental || 0) * (q / 10) * 2 * wExpW;              // documented big-match temperament (tiny)
+    const f = playerForm(p);
+    adj += f * q * 0.9;                         // form boost/penalty
+    formMorale += f * q / 10 * 0.25;            // players' situation -> squad morale
+  }
+  // star-dependence: quality concentrated in one player is easier to scheme against
+  // (NOT a naive "star gets marked" penalty - that's already priced into Elo)
+  const avail = pdata(team).filter(p => !isOut(p, upIdx)).map(qEff);
+  if (avail.length > 1){
+    const top = Math.max(...avail), tot = avail.reduce((a,b)=>a+b, 0);
+    adj -= Math.min(8, Math.max(0, top / tot - 0.32) * 50);
+  }
+  // positional balance: losses concentrated in one position hurt super-linearly
+  let balance = 0;
+  for (const pos in posTot){
+    const lossShare = 1 - (posAvail[pos] || 0) / posTot[pos];
+    balance += (POS_W[pos] || 1) * lossShare * lossShare * (P.balance_scale || 55);
+  }
+  adj -= balance;
+  return {adj: Math.max(-150, Math.min(120, adj)) * S.wPlayer,
+          morale: Math.max(-1.5, Math.min(1.5, formMorale)), balance};
+}
+/* per-fixture upcoming index: how many unplayed matches each team has before fixture i */
+const upIdxMap = {};
+(function(){
+  const cnt = {};
+  D.fixtures.forEach((fx, i) => {
+    if (playedKeyRaw[fx.home + '|' + fx.away]) return;
+    upIdxMap[i] = {h: cnt[fx.home] || 0, a: cnt[fx.away] || 0};
+    cnt[fx.home] = (cnt[fx.home] || 0) + 1;
+    cnt[fx.away] = (cnt[fx.away] || 0) + 1;
+  });
+})();
+
+function newsMorale(name){
+  const f = F.teams[name]; if (!f) return 0;
+  let m = 0;
+  for (const n of f.news){
+    const cred = n.credibility < 0.7 ? n.credibility * S.rumorTrust : n.credibility;
+    m += n.impact * cred;
+  }
+  return Math.max(-5, Math.min(5, m));
+}
+function factorAdj(name, upIdx){
+  const f = F.teams[name] || {pedigree: 10, news: []};
+  const pl = playerLayer(name, upIdx);
+  const morale = Math.max(-5, Math.min(5,
+    newsMorale(name) + (S.tweaks[name] || 0) + pl.morale));
+  const locker = morale / 5 * F.locker_scale * S.wLocker;
+  const ped = (f.pedigree - 30) / 70 * F.pedigree_scale * S.wPed;
+  return locker + ped + pl.adj;
+}
+function effElo(name, upIdx){
+  return teams[name].elo + (HOSTS.has(name) ? S.hostBonus : 0) + factorAdj(name, upIdx);
+}
+const sig = x => 1/(1+Math.exp(-x));
+const logit = p => Math.log(Math.min(Math.max(p,1e-6),1-1e-6)/(1-Math.min(Math.max(p,1e-6),1-1e-6)));
+function winExp(ea, eb){ return 1/(1+Math.pow(10, -(ea-eb)/400)); }
+function calWE(raw){ return sig(CAL.a + CAL.b * logit(raw)); }
+function rates(we){
+  const lh = BASE_GOALS * Math.pow(we,1.1) / (Math.pow(we,1.1)+Math.pow(1-we,1.1));
+  return [Math.max(lh,0.15), Math.max(BASE_GOALS-lh,0.15)];
+}
+function poisPmf(l, kmax){
+  const p = [Math.exp(-l)];
+  for (let k=1;k<=kmax;k++) p.push(p[k-1]*l/k);
+  return p;
+}
+/* full score matrix + summary for a pairing */
+function scoreModel(h, a, jH, jA){
+  let we = calWE(winExp(effElo(h, jH), effElo(a, jA)));
+  const modelWe = we;
+  const key = h + '|' + a;
+  // referee variance: high-upset-rate refs nudge toward 0.5 (tiny, neutral stat)
+  const refName = SIG.assignments[key];
+  const ref = refName ? SIG.referees[refName] : null;
+  if (ref && ref.upset_rate != null){
+    const b = (SIG.baseline || {}).upset_rate || 0.26;
+    we += (0.5 - we) * Math.max(0, Math.min(0.06, (ref.upset_rate - b) * 0.3));
+  }
+  // market signal: blend toward reported sharp-money line
+  const mk = SIG.market[key];
+  let diverge = 0;
+  if (mk && mk.we_home != null){
+    diverge = mk.we_home - modelWe;
+    we = (1 - S.wMarket) * we + S.wMarket * mk.we_home;
+  }
+  const [lh, la] = rates(we);
+  const K = 7;
+  const ph = poisPmf(lh,K), pa = poisPmf(la,K);
+  const M = [];
+  let pw=0, pd=0, pl=0, best=[0,0], bestP=0;
+  const flat=[];
+  for (let i=0;i<=K;i++){ M.push([]);
+    for (let j=0;j<=K;j++){
+      const p = ph[i]*pa[j];
+      M[i].push(p); flat.push([p,i,j]);
+      if (i>j) pw+=p; else if (i===j) pd+=p; else pl+=p;
+      if (p>bestP){bestP=p;best=[i,j];}
+    }}
+  flat.sort((x,y)=>y[0]-x[0]);
+  return {we, modelWe, lh, la, M, pw, pd, pl, best, bestP, top: flat.slice(0,5),
+          refName, ref, mk, diverge};
+}
+function poisson(l){
+  const L = Math.exp(-l); let k=0, p=1;
+  for(;;){ p *= Math.random(); if (p<=L) return k; k++; }
+}
+function simMatch(h, a, knockout){
+  const we = calWE(winExp(effElo(h), effElo(a)));
+  const [lh, la] = rates(we);
+  let hs = poisson(lh), as = poisson(la);
+  if (!knockout || hs!==as) return [hs,as,hs>as];
+  hs += poisson(lh/3); as += poisson(la/3);
+  if (hs!==as) return [hs,as,hs>as];
+  const p = Math.min(Math.max(0.5+(we-0.5)*0.3,0.35),0.65);
+  return [hs,as,Math.random()<p];
+}
+
+/* ---------------- tournament structure ---------------- */
+const R32 = [["M73","2A","2B"],["M74","1E","3:ABCDF"],["M75","1F","2C"],["M76","1C","2F"],
+  ["M77","1I","3:CDFGH"],["M78","2E","2I"],["M79","1A","3:CEFHI"],["M80","1L","3:EHIJK"],
+  ["M81","1D","3:BEFIJ"],["M82","1G","3:AEHIJ"],["M83","2K","2L"],["M84","1H","2J"],
+  ["M85","1B","3:EFGIJ"],["M86","1J","2H"],["M87","1K","3:DEIJL"],["M88","2D","2G"]];
+const R16 = [["M89","M74","M77"],["M90","M73","M75"],["M91","M76","M78"],["M92","M79","M80"],
+  ["M93","M83","M84"],["M94","M81","M82"],["M95","M86","M88"],["M96","M85","M87"]];
+const QF = [["M97","M89","M90"],["M98","M93","M94"],["M99","M91","M92"],["M100","M95","M96"]];
+const SF = [["M101","M97","M98"],["M102","M99","M100"]];
+const THIRD_SLOTS = R32.filter(m=>m[2].startsWith("3:")).map(m=>[m[0], new Set(m[2].slice(2))]);
+
+const played = D.matches;   // [{home,away,hs,as,group,stage,date}]
+const playedKey = {};
+for (const m of played){ playedKey[m.home+"|"+m.away] = m; }
+const groupTeams = D.groups;  // {A:[names]}
+const playedByGroup = {};
+for (const g in groupTeams) playedByGroup[g] = [];
+for (const m of played) if (m.stage==="group") playedByGroup[m.group].push([m.home,m.away,m.hs,m.as]);
+const remainingByGroup = {};
+for (const g in groupTeams){
+  const done = new Set(playedByGroup[g].map(r=>[r[0],r[1]].sort().join("|")));
+  remainingByGroup[g] = [];
+  const ts = groupTeams[g];
+  for (let i=0;i<4;i++) for (let j=i+1;j<4;j++){
+    if (!done.has([ts[i],ts[j]].sort().join("|"))) remainingByGroup[g].push([ts[i],ts[j]]);
+  }
+}
+
+function tableOrder(ts, results){
+  const pts={},gd={},gf={};
+  ts.forEach(t=>{pts[t]=0;gd[t]=0;gf[t]=0;});
+  for (const [h,a,hs,as] of results){
+    gf[h]+=hs; gf[a]+=as; gd[h]+=hs-as; gd[a]+=as-hs;
+    if (hs>as) pts[h]+=3; else if (hs<as) pts[a]+=3; else {pts[h]++;pts[a]++;}
+  }
+  const order = [...ts].sort((x,y)=> pts[y]-pts[x] || gd[y]-gd[x] || gf[y]-gf[x] || Math.random()-0.5);
+  return {order, pts, gd, gf};
+}
+function allocateThirds(quals){
+  const used = new Set(), out = {};
+  function bt(i){
+    if (i===THIRD_SLOTS.length) return true;
+    const [mid, allowed] = THIRD_SLOTS[i];
+    for (const g of quals){
+      if (allowed.has(g) && !used.has(g)){
+        used.add(g); out[mid]=g;
+        if (bt(i+1)) return true;
+        used.delete(g); delete out[mid];
+      }}
+    return false;
+  }
+  return bt(0) ? out : null;
+}
+
+/* ---------------- Monte Carlo ---------------- */
+let lastStats = null;
+async function runSim(){
+  const N = +document.getElementById('simsN').value;
+  const btn = document.getElementById('runBtn'); btn.disabled = true;
+  const prog = document.querySelector('#prog div');
+  const stats = {};
+  for (const t in teams) stats[t]={adv:0,gw:0,r32:0,r16:0,qf:0,sf:0,fin:0,ch:0};
+  const t0 = performance.now();
+  const CHUNK = 250;
+  for (let s=0;s<N;s+=CHUNK){
+    const n = Math.min(CHUNK, N-s);
+    for (let k=0;k<n;k++) simOnce(stats);
+    prog.style.width = ((s+n)/N*100)+'%';
+    await new Promise(r=>setTimeout(r,0));
+  }
+  for (const t in stats) for (const k in stats[t]) stats[t][k]/=N;
+  lastStats = stats;
+  document.getElementById('simInfo').textContent =
+    `${((performance.now()-t0)/1000).toFixed(1)}秒完成 ${N.toLocaleString()} 次锦标赛模拟 · 更衣室×${S.wLocker} 传闻${S.rumorTrust} 底蕴×${S.wPed} 球员×${S.wPlayer} 市场${S.wMarket}`;
+  renderOverview(); renderGroups(); renderBracket();
+  btn.disabled = false;
+}
+function simOnce(st){
+  const win={},run={},thr={},ti={};
+  for (const g in groupTeams){
+    const res = [...playedByGroup[g]];
+    for (const [h,a] of remainingByGroup[g]){
+      const [hs,as] = simMatch(h,a,false); res.push([h,a,hs,as]);
+    }
+    const {order,pts,gd,gf} = tableOrder(groupTeams[g], res);
+    win[g]=order[0]; run[g]=order[1]; thr[g]=order[2];
+    ti[g]=[pts[order[2]],gd[order[2]],gf[order[2]],Math.random()];
+    st[order[0]].gw++; st[order[0]].adv++; st[order[1]].adv++;
+  }
+  const ranked = Object.keys(ti).sort((a,b)=>{
+    const x=ti[a],y=ti[b];
+    return y[0]-x[0]||y[1]-x[1]||y[2]-x[2]||y[3]-x[3];
+  });
+  const quals = ranked.slice(0,8);
+  for (const g of quals) st[thr[g]].adv++;
+  let alloc = allocateThirds(quals);
+  if (!alloc){ alloc={}; THIRD_SLOTS.forEach((sl,i)=>alloc[sl[0]]=quals[i]); }
+  const resolve = (slot,mid) =>
+    slot[0]==="1" ? win[slot[1]] : slot[0]==="2" ? run[slot[1]] : thr[alloc[mid]];
+  const alive={};
+  for (const [mid,sa,sb] of R32){
+    const ta=resolve(sa,mid), tb=resolve(sb,mid);
+    st[ta].r32++; st[tb].r32++;
+    alive[mid] = simMatch(ta,tb,true)[2] ? ta : tb;
+  }
+  for (const [rd,key] of [[R16,'r16'],[QF,'qf'],[SF,'sf']]){
+    for (const [mid,ma,mb] of rd){
+      const ta=alive[ma], tb=alive[mb];
+      st[ta][key]++; st[tb][key]++;
+      alive[mid] = simMatch(ta,tb,true)[2] ? ta : tb;
+    }
+  }
+  const ta=alive["M101"], tb=alive["M102"];
+  st[ta].fin++; st[tb].fin++;
+  st[simMatch(ta,tb,true)[2]?ta:tb].ch++;
+}
+
+/* ---------------- rendering ---------------- */
+const pct=(x,d=1)=>(x*100).toFixed(d)+'%';
+const heat=x=>`<span class="heat" style="background:rgba(51,209,122,${(x*0.55).toFixed(2)});color:${x>0.45?'#06240f':'var(--txt)'}">${pct(x)}</span>`;
+
+function renderBadges(){
+  const nref = Object.keys(SIG.assignments || {}).length;
+  document.getElementById('badges').innerHTML = `
+    <span class="badge">数据更新 <b>${D.generated_utc}</b></span>
+    <span class="badge">Elo快照 <b>${D.elo_snapshot_date}</b></span>
+    <span class="badge">已赛 <b>${played.length}</b> 场</span>
+    <span class="badge">ML校准 <b>a=${CAL.a} b=${CAL.b} 进球&times;${CAL.goal_mult}</b>(基于${CAL.n_obs}场)</span>
+    <span class="badge">裁判安排已公布 <b>${nref}</b> 场(赛前1-2天逐场公布)</span>`;
+}
+function renderOverview(){
+  const arr = Object.keys(teams).map(t=>({name:t, ...lastStats[t]}))
+    .sort((a,b)=>b.ch-a.ch);
+  const mx = arr[0].ch || 1e-9;
+  document.getElementById('champ').innerHTML = arr.slice(0,12).map(t=>`
+    <div class="bar-row"><div class="nm">${cn(t.name)}</div>
+    <div class="bar-track"><div class="bar-fill" style="width:${(t.ch/mx*100).toFixed(1)}%"></div></div>
+    <div class="bar-pct">${pct(t.ch)}</div></div>`).join('');
+  document.querySelector('#power tbody').innerHTML = arr.slice(0,24).map(t=>{
+    const adj = factorAdj(t.name)+(HOSTS.has(t.name)?S.hostBonus:0);
+    return `<tr><td><b>${cn(t.name)}</b></td><td style="text-align:center">${teams[t.name].group}</td>
+    <td>${effElo(t.name).toFixed(0)}</td>
+    <td class="${adj>0?'up':adj<0?'dn':''}">${adj>0?'+':''}${adj.toFixed(0)}</td>
+    <td>${heat(t.r32)}</td><td>${heat(t.r16)}</td><td>${heat(t.qf)}</td>
+    <td>${heat(t.sf)}</td><td>${heat(t.fin)}</td><td>${heat(t.ch)}</td></tr>`;
+  }).join('');
+}
+function wdlBar(pw,pd,pl){
+  return `<div class="wdl" title="W ${pct(pw)} / D ${pct(pd)} / L ${pct(pl)}">
+    <div class="w" style="width:${pw*100}%">${pw>0.18?pct(pw,0):''}</div>
+    <div class="d" style="width:${pd*100}%">${pd>0.18?pct(pd,0):''}</div>
+    <div class="l" style="width:${pl*100}%">${pl>0.18?pct(pl,0):''}</div></div>`;
+}
+function renderFixtures(){
+  const box = document.getElementById('fixtures');
+  let html='', lastDate='';
+  D.fixtures.forEach((fx,i)=>{
+    const u = upIdxMap[i] || {};
+    const sm = scoreModel(fx.home, fx.away, u.h, u.a);
+    const real = playedKey[fx.home+"|"+fx.away];
+    if (fx.date!==lastDate){
+      lastDate=fx.date;
+      const d=new Date(fx.date+'T12:00:00');
+      html+=`<div class="day">${d.toLocaleDateString('zh-CN',{month:'long',day:'numeric',weekday:'long'})}</div>`;
+    }
+    const flag = !real && Math.abs(sm.diverge) > 0.12 ? ' <span title="市场资金流向与模型明显背离">&#9888;</span>' : '';
+    const scoreCell = real
+      ? `<div class="score played">${real.hs}–${real.as}<small>模型预测: ${sm.best[0]}–${sm.best[1]}</small></div>`
+      : `<div class="score">${sm.best[0]}–${sm.best[1]}${flag}<small>最可能 ${pct(sm.bestP)}</small></div>`;
+    html+=`<div class="match" id="mx${i}">
+      <div class="mhead" onclick="toggleMatch(${i})">
+        <div class="g">${fx.group}组</div>
+        <div class="h">${cn(fx.home)}</div>
+        ${scoreCell}
+        <div class="a">${cn(fx.away)}</div>
+        ${wdlBar(sm.pw,sm.pd,sm.pl)}
+      </div>
+      <div class="mbody" data-i="${i}"></div>
+    </div>`;
+  });
+  box.innerHTML = html;
+}
+window.toggleMatch = function(i){
+  const el = document.getElementById('mx'+i);
+  el.classList.toggle('open');
+  const body = el.querySelector('.mbody');
+  if (el.classList.contains('open')){
+    const fx = D.fixtures[i];
+    const u = upIdxMap[i] || {};
+    const sm = scoreModel(fx.home, fx.away, u.h, u.a);
+    const outs = [];
+    [[fx.home, u.h], [fx.away, u.a]].forEach(([tm, j]) => {
+      pdata(tm).forEach(p => { const o = isOut(p, j);
+        if (o) outs.push(`${p.n}(${cn(tm)}:${p.st==='injured'?'伤缺':p.st==='doubtful'?'存疑':'停赛'})`); });
+    });
+    let hm = `<table class="hm"><tr><th>${cn(fx.home).slice(0,3)} \\ ${cn(fx.away).slice(0,3)}</th>`;
+    for (let j=0;j<=5;j++) hm+=`<th>${j}</th>`; hm+='</tr>';
+    let pmax=0; sm.M.forEach(r=>r.forEach(p=>pmax=Math.max(pmax,p)));
+    for (let gi=0;gi<=5;gi++){
+      hm+=`<tr><th>${gi}</th>`;
+      for (let gj=0;gj<=5;gj++){
+        const p=sm.M[gi][gj];
+        const isB = gi===sm.best[0]&&gj===sm.best[1];
+        hm+=`<td style="background:rgba(77,163,255,${(p/pmax*0.75).toFixed(2)});${isB?'outline:2px solid var(--gold);':''}">${(p*100).toFixed(1)}</td>`;
+      }
+      hm+='</tr>';
+    }
+    hm+='</table>';
+    const tops = sm.top.map(([p,i2,j2])=>`<b>${i2}–${j2}</b> <span class="pl">${pct(p)}</span>`).join(' &nbsp;·&nbsp; ');
+    const refLine = sm.refName
+      ? `<div style="margin-bottom:8px"><b>主裁判</b> ${sm.refName}${sm.ref&&sm.ref.country?`(${sm.ref.country})`:''}${sm.ref&&sm.ref.cards_per_match!=null?` · 场均黄牌${sm.ref.cards_per_match}`:''}${sm.ref&&sm.ref.pens_rate!=null?` · 点球率${(sm.ref.pens_rate*100).toFixed(0)}%`:''}${sm.ref&&sm.ref.upset_rate!=null?` · 执法爆冷率${(sm.ref.upset_rate*100).toFixed(0)}%`:''}</div>`
+      : `<div style="margin-bottom:8px;color:var(--muted)"><b>主裁判</b> 尚未公布(FIFA于赛前1-2天公布)</div>`;
+    const mkLine = sm.mk && sm.mk.we_home != null
+      ? `<div style="margin-bottom:8px"><b>市场信号</b> 盘口隐含主胜率 ${(sm.mk.we_home*100).toFixed(0)}%(模型 ${(sm.modelWe*100).toFixed(0)}%)${Math.abs(sm.diverge)>0.12?' <span style="color:var(--gold)">&#9888; 资金流向与模型明显背离</span>':''}${sm.mk.note?` — ${sm.mk.note}`:''}</div>`
+      : '';
+    body.innerHTML = `${hm}<div class="tops">
+      <div style="margin-bottom:8px"><b>胜率期望</b> ${pct(sm.we)}(含全部因子与ML校准)</div>
+      <div style="margin-bottom:8px"><b>预期进球</b> ${cn(fx.home)} ${sm.lh.toFixed(2)} — ${sm.la.toFixed(2)} ${cn(fx.away)}</div>
+      <div style="margin-bottom:8px"><b>最可能比分:</b> ${tops}</div>
+      <div style="margin-bottom:8px"><b>胜/平/负</b> ${pct(sm.pw)} / ${pct(sm.pd)} / ${pct(sm.pl)}</div>
+      ${refLine}${mkLine}
+      ${outs.length ? `<div><b>本场缺阵:</b> ${outs.join(' · ')}</div>` : ''}</div>`;
+  }
+};
+function renderGroups(){
+  const cur = {};
+  for (const g in groupTeams){
+    const {pts} = tableOrder(groupTeams[g], playedByGroup[g]);
+    cur[g]=pts;
+  }
+  document.getElementById('groupCards').innerHTML = Object.entries(groupTeams).map(([g,names])=>{
+    const rows = names.map(n=>({n, adv:lastStats[n].adv, gw:lastStats[n].gw, p:cur[g][n]||0}))
+      .sort((a,b)=>b.adv-a.adv)
+      .map(t=>`<div class="trow"><span>${cn(t.n)}</span><span>${t.p}</span>
+        <span class="pq">${pct(t.adv,0)}</span><span>${pct(t.gw,0)}</span></div>`).join('');
+    return `<div class="gcard"><h3>${g} 组</h3>
+      <div class="trow hdr"><span>球队</span><span>分</span><span>出线</span><span>头名</span></div>${rows}</div>`;
+  }).join('');
+}
+function renderBracket(){
+  // modal group outcomes from stats
+  const win={},run={},thr={};
+  for (const g in groupTeams){
+    const sorted=[...groupTeams[g]].sort((a,b)=>lastStats[b].gw-lastStats[a].gw);
+    win[g]=sorted[0];
+    const rest=groupTeams[g].filter(t=>t!==win[g]).sort((a,b)=>lastStats[b].adv-lastStats[a].adv);
+    run[g]=rest[0]; thr[g]=rest[1];
+  }
+  const quals = Object.keys(groupTeams).sort((a,b)=>lastStats[thr[b]].adv-lastStats[thr[a]].adv).slice(0,8);
+  let alloc = allocateThirds(quals);
+  if (!alloc){ alloc={}; THIRD_SLOTS.forEach((sl,i)=>alloc[sl[0]]=quals[i]); }
+  const resolve=(slot,mid)=> slot[0]==="1"?win[slot[1]]:slot[0]==="2"?run[slot[1]]:thr[alloc[mid]];
+  const alive={};
+  const rounds=[["32强",R32],["16强",R16],["四分之一决赛",QF],["半决赛",SF]];
+  let html='';
+  for (const [label,rd] of rounds){
+    html+=`<div class="round"><h3>${label}</h3><div class="bk">`;
+    for (const [mid,sa,sb] of rd){
+      const ta = label==="32强" ? resolve(sa,mid) : alive[sa];
+      const tb = label==="32强" ? resolve(sb,mid) : alive[sb];
+      const sm = scoreModel(ta,tb);
+      let s=sm.best[0], s2=sm.best[1], winner;
+      if (s===s2){ winner = sm.pw>=sm.pl ? ta : tb; }
+      else winner = s>s2 ? ta : tb;
+      alive[mid]=winner;
+      const tag = s===s2 ? ` <small>(${cn(winner)}点球胜)</small>` : '';
+      html+=`<div class="bkm"><div class="h ${winner===ta?'adv':''}">${cn(ta)}</div>
+        <div class="s">${s}–${s2}${tag}</div><div class="a ${winner===tb?'adv':''}">${cn(tb)}</div></div>`;
+    }
+    html+='</div></div>';
+  }
+  const ta=alive["M101"], tb=alive["M102"];
+  const sm=scoreModel(ta,tb);
+  const winner = sm.best[0]===sm.best[1] ? (sm.pw>=sm.pl?ta:tb) : (sm.best[0]>sm.best[1]?ta:tb);
+  html+=`<div class="round"><h3>决赛 — 7月19日 · 纽约新泽西体育场</h3><div class="bk">
+    <div class="bkm"><div class="h ${winner===ta?'adv':''}">${cn(ta)}</div>
+    <div class="s">${sm.best[0]}–${sm.best[1]}</div><div class="a ${winner===tb?'adv':''}">${cn(tb)}</div></div></div>
+    <div style="margin-top:10px;font-size:15px">&#127942; 预测冠军:<b style="color:var(--gold)">${cn(winner)}</b></div></div>`;
+  document.getElementById('bracketView').innerHTML = html;
+}
+function renderFactors(){
+  const tb = document.getElementById('fteams');
+  const arr = Object.keys(teams).sort((a,b)=>effElo(b)-effElo(a));
+  tb.innerHTML = arr.map(n=>{
+    const f=F.teams[n]||{pedigree:10,news:[]};
+    const nm=newsMorale(n);
+    const adj=factorAdj(n);
+    const news=f.news.map(x=>`<div class="newsline">${x.credibility<0.7?'<span class="rumor">&#9888; 传闻</span> ':''}
+      ${x.text} <span class="cred">(影响 ${x.impact>0?'+':''}${x.impact},可信度 ${x.credibility})</span></div>`).join('');
+    return `<tr><td><b>${cn(n)}</b>${news}</td>
+      <td>${f.pedigree}</td>
+      <td class="${nm>0?'up':nm<0?'dn':''}">${nm.toFixed(1)}</td>
+      <td><input type="number" min="-5" max="5" step="0.5" value="${S.tweaks[n]||0}" data-team="${n}"></td>
+      <td class="${adj>0?'up':adj<0?'dn':''}">${adj>0?'+':''}${adj.toFixed(0)}</td></tr>`;
+  }).join('');
+  tb.querySelectorAll('input').forEach(inp=>{
+    inp.addEventListener('change', e=>{
+      S.tweaks[e.target.dataset.team]=parseFloat(e.target.value)||0;
+      saveS(); refreshLight();
+    });
+  });
+}
+function renderPlayers(){
+  const stBadge = {fit:'<span class="up">正常</span>', doubtful:'<span style="color:var(--gold)">存疑</span>',
+    injured:'<span class="dn">伤缺</span>', suspended:'<span style="color:var(--purple)">停赛</span>'};
+  const stCN = {fit:'正常', doubtful:'存疑', injured:'伤缺', suspended:'停赛'};
+  const arr = Object.keys(P.teams).sort((a,b)=>effElo(b)-effElo(a));
+  document.getElementById('squads').innerHTML = arr.map(tm=>{
+    const pl = playerLayer(tm, null);
+    const rows = pdata(tm).map(p=>{
+      const f = playerForm(p);
+      const s = p.stats || {};
+      const stat = s.min ? `${s.min}分钟 · ${s.g}球${s.a}助` +
+        (s.pass!=null?` · 传球${s.pass}%`:'') + (s.drib!=null?` · 过人${s.drib}%`:'') : '暂无出场';
+      const fbar = f===0?'—':`<span class="${f>0?'up':'dn'}">${f>0?'+':''}${f.toFixed(1)}</span>`;
+      return `<div style="display:grid;grid-template-columns:1fr 40px 86px 70px 56px;gap:6px;align-items:center;
+          padding:5px 0;border-top:1px solid var(--line);font-size:12.5px">
+        <div><b>${p.n}</b> <span style="color:var(--muted)">${p.pos} · ${p.age}岁 · q${p.q} · ${p.lg||'?'}&rarr;<b style="color:var(--accent2)">${qEff(p).toFixed(1)}</b>${(p.inj??1)>=2?' · &#127973;易伤'+p.inj:''}${p.wc?` · &#127758;世界杯&times;${p.wc}`:''}${p.mental?` · &#129504;${p.mental>0?'+':''}${p.mental}`:''}${p.yel?` · &#129000;${p.yel}`:''}</span>
+          <div style="color:var(--muted);font-size:11px">${stat}${p.note?` — ${p.note}`:''}</div></div>
+        <div style="text-align:center">${fbar}</div>
+        <select data-k="${tm}|${p.n}" data-f="st" style="background:var(--card2);color:var(--txt);border:1px solid var(--line);border-radius:5px;font-size:11.5px;padding:2px">
+          ${['fit','doubtful','injured','suspended'].map(o=>`<option value="${o}" ${o===p.st?'selected':''}>${stCN[o]}</option>`).join('')}</select>
+        <div style="text-align:center;font-size:11px;color:var(--muted)">禁赛 <input type="number" min="0" max="7" value="${p.ban||0}"
+          data-k="${tm}|${p.n}" data-f="ban" style="width:36px;background:var(--card2);border:1px solid var(--line);color:var(--txt);border-radius:4px;text-align:center"></div>
+        <div style="text-align:right">${stBadge[p.st]||p.st}</div>
+      </div>`;
+    }).join('');
+    return `<div class="gcard"><h3>${cn(tm)}
+      <span style="float:right;color:${pl.adj<0?'var(--red)':pl.adj>0?'var(--accent)':'var(--muted)'}">球员层修正 ${pl.adj>0?'+':''}${pl.adj.toFixed(0)} Elo${pl.balance>2?` <span style="color:var(--gold)">(&#9888; 位置失衡 -${pl.balance.toFixed(0)})</span>`:''}</span></h3>${rows}</div>`;
+  }).join('');
+  document.getElementById('squads').querySelectorAll('select,input').forEach(el=>{
+    el.addEventListener('change', e=>{
+      const k = e.target.dataset.k, f = e.target.dataset.f;
+      S.playerOv[k] = S.playerOv[k] || {};
+      S.playerOv[k][f] = f==='ban' ? (parseInt(e.target.value)||0) : e.target.value;
+      saveS(); refreshLight();
+    });
+  });
+}
+function renderMethod(){
+  document.getElementById('method').innerHTML = `
+  <b>模型说明。</b>基础实力来自实时世界足球Elo评分(eloratings.net),每场结果按Elo公式更新(K=60,含净胜球乘数)。
+  <b>ML校准层</b>:贝叶斯逻辑回归,每次数据更新用本届已赛比赛重新拟合(当前${CAL.n_obs}场)。<b>因子:</b>
+  &#9312; 更衣室——新闻按影响力&times;来源可信度计分;
+  &#9313; 假消息过滤——低可信度(&lt;0.7)条目按"传闻信任度"再折扣;
+  &#9314; 世界杯底蕴——历史战绩指数;
+  &#9315; 球员层——伤停按重要度扣Elo(停赛只影响接下来N场),实力按所属联赛强度与位置年龄曲线缩放,
+  易伤度按预期缺阵折减,同位置集中伤停超线性惩罚,赛事中状态(传球%、过人%、进球、助攻)动态增减实力与士气,
+  世界杯经验小幅加成,有据可查的大赛心理小幅修正,球星依赖度过高小幅扣减;
+  &#9316; 裁判——FIFA已公布52人裁判池,每场执法安排赛前1-2天公布并随每日更新录入;裁判数据(场均黄牌/点球率/执法爆冷率)
+  为中性统计,仅小幅增加高变数场次的不确定性——样本太小,<b>不构成对任何裁判的操纵指控</b>;
+  &#9317; 市场信号——有公开报道的大额资金/盘口异动时,模型胜率按你设定的权重向市场混合,背离&gt;12%打&#9888;标记
+  (这代表"市场知道一些模型不知道的事",可能是阵容、动机,极少数情况是更糟的事,但不是假球证据)。
+  比分用独立泊松进球模型;锦标赛按官方赛制(12组、8个最佳第三、FIFA 32强槽位约束、加时与点球)在浏览器内完整模拟。
+  <b>所有概率仅为估计,不构成任何投注建议。</b>`;
+}
+
+/* light refresh: fixtures + factor + player tables (analytic, instant) */
+function refreshLight(){ renderFixtures(); renderFactors(); renderPlayers(); if(lastStats){renderOverview();renderBracket();} }
+
+/* ---------------- wiring ---------------- */
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));
+  document.querySelectorAll('section').forEach(x=>x.classList.remove('on'));
+  b.classList.add('on');
+  document.getElementById(b.dataset.t).classList.add('on');
+}));
+function bindSlider(id, key, fmt){
+  const el=document.getElementById(id), val=document.getElementById(id+'V');
+  el.value=S[key];
+  val.textContent=fmt(S[key]);
+  el.addEventListener('input',()=>{ S[key]=parseFloat(el.value); val.textContent=fmt(S[key]); saveS(); refreshLight(); });
+}
+bindSlider('wLocker','wLocker',v=>(+v).toFixed(1));
+bindSlider('rumorTrust','rumorTrust',v=>(+v).toFixed(2));
+bindSlider('wPed','wPed',v=>(+v).toFixed(1));
+bindSlider('hostB','hostBonus',v=>''+Math.round(v));
+bindSlider('wPlayer','wPlayer',v=>(+v).toFixed(1));
+bindSlider('wLeague','wLeague',v=>(+v).toFixed(1));
+bindSlider('wAge','wAge',v=>(+v).toFixed(1));
+bindSlider('wExp','wExp',v=>(+v).toFixed(1));
+bindSlider('wMarket','wMarket',v=>(+v).toFixed(2));
+document.getElementById('runBtn').addEventListener('click',runSim);
+
+renderBadges(); renderMethod(); renderFixtures(); renderFactors(); renderPlayers();
+runSim();
+</script>
+</body>
+</html>

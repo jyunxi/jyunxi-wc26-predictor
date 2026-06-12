@@ -1,0 +1,3959 @@
+{
+ "comment": "Key players per squad. q = quality 1-10. st = fit|doubtful|injured|suspended. yel = tournament yellow cards (2 -> 1-match ban, wiped after QF). ban = remaining matches banned. stats accumulate during the tournament (min=minutes, g=goals, a=assists, pass=pass completion %, drib=dribble success %); null pass/drib = no data yet. Form is computed vs positional baselines and updates team strength dynamically.",
+ "pos_baselines": {
+  "GK": {
+   "pass": 74,
+   "drib": 0,
+   "g90": 0.0
+  },
+  "DEF": {
+   "pass": 86,
+   "drib": 50,
+   "g90": 0.05
+  },
+  "MID": {
+   "pass": 86,
+   "drib": 55,
+   "g90": 0.15
+  },
+  "FWD": {
+   "pass": 79,
+   "drib": 52,
+   "g90": 0.45
+  }
+ },
+ "teams": {
+  "Mexico": [
+   {
+    "n": "Raul Jimenez",
+    "pos": "FWD",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 90,
+     "g": 1,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 35,
+    "inj": 1,
+    "wc": 3
+   },
+   {
+    "n": "Julian Quinones",
+    "pos": "FWD",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 90,
+     "g": 1,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "SAU",
+    "age": 29,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Santiago Gimenez",
+    "pos": "FWD",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ITA",
+    "age": 25,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Edson Alvarez",
+    "pos": "MID",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 90,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "TUR",
+    "age": 28,
+    "inj": 1,
+    "wc": 1
+   }
+  ],
+  "South Korea": [
+   {
+    "n": "Son Heung-min",
+    "pos": "FWD",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 90,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "MLS",
+    "age": 33,
+    "inj": 1,
+    "wc": 3
+   },
+   {
+    "n": "Lee Kang-in",
+    "pos": "MID",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 90,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "FRA",
+    "age": 25,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Kim Min-jae",
+    "pos": "DEF",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 90,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "GER",
+    "age": 29,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Hwang Hee-chan",
+    "pos": "FWD",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 30,
+    "inj": 1,
+    "wc": 2
+   }
+  ],
+  "Czechia": [
+   {
+    "n": "Patrik Schick",
+    "pos": "FWD",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 90,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "GER",
+    "age": 30,
+    "inj": 2,
+    "wc": 0
+   },
+   {
+    "n": "Tomas Soucek",
+    "pos": "MID",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 90,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 31,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Adam Hlozek",
+    "pos": "FWD",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "GER",
+    "age": 23,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Antonin Barak",
+    "pos": "MID",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ITA",
+    "age": 31,
+    "inj": 1,
+    "wc": 0
+   }
+  ],
+  "South Africa": [
+   {
+    "n": "Ronwen Williams",
+    "pos": "GK",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 90,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "RSA",
+    "age": 32,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Lyle Foster",
+    "pos": "FWD",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 90,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 25,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Teboho Mokoena",
+    "pos": "MID",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 90,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "RSA",
+    "age": 29,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Percy Tau",
+    "pos": "FWD",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "EGY",
+    "age": 32,
+    "inj": 1,
+    "wc": 0
+   }
+  ],
+  "Switzerland": [
+   {
+    "n": "Granit Xhaka",
+    "pos": "MID",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 33,
+    "inj": 1,
+    "wc": 3
+   },
+   {
+    "n": "Manuel Akanji",
+    "pos": "DEF",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ITA",
+    "age": 30,
+    "inj": 1,
+    "wc": 2
+   },
+   {
+    "n": "Dan Ndoye",
+    "pos": "FWD",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 25,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Breel Embolo",
+    "pos": "FWD",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "FRA",
+    "age": 29,
+    "inj": 2,
+    "wc": 2
+   }
+  ],
+  "Canada": [
+   {
+    "n": "Alphonso Davies",
+    "pos": "DEF",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "GER",
+    "age": 25,
+    "inj": 2,
+    "wc": 1
+   },
+   {
+    "n": "Jonathan David",
+    "pos": "FWD",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ITA",
+    "age": 26,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Stephen Eustaquio",
+    "pos": "MID",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "POR",
+    "age": 29,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Tajon Buchanan",
+    "pos": "MID",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ESP",
+    "age": 27,
+    "inj": 1,
+    "wc": 1
+   }
+  ],
+  "Bosnia and Herzegovina": [
+   {
+    "n": "Ermedin Demirovic",
+    "pos": "FWD",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "GER",
+    "age": 28,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Edin Dzeko",
+    "pos": "FWD",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ITA",
+    "age": 40,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Anel Ahmedhodzic",
+    "pos": "DEF",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG2",
+    "age": 27,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Amar Dedic",
+    "pos": "DEF",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "POR",
+    "age": 23,
+    "inj": 1,
+    "wc": 0
+   }
+  ],
+  "Qatar": [
+   {
+    "n": "Akram Afif",
+    "pos": "FWD",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "QAT",
+    "age": 29,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Almoez Ali",
+    "pos": "FWD",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "QAT",
+    "age": 29,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Meshaal Barsham",
+    "pos": "GK",
+    "q": 5,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "QAT",
+    "age": 28,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Karim Boudiaf",
+    "pos": "MID",
+    "q": 5,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "QAT",
+    "age": 35,
+    "inj": 1,
+    "wc": 1
+   }
+  ],
+  "Brazil": [
+   {
+    "n": "Vinicius Junior",
+    "pos": "FWD",
+    "q": 9,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ESP",
+    "age": 25,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Raphinha",
+    "pos": "FWD",
+    "q": 9,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ESP",
+    "age": 29,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Rodrygo",
+    "pos": "FWD",
+    "q": 9,
+    "st": "injured",
+    "yel": 0,
+    "ban": 0,
+    "note": "ACL + meniscus, out for tournament",
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ESP",
+    "age": 25,
+    "inj": 2,
+    "wc": 1
+   },
+   {
+    "n": "Bruno Guimaraes",
+    "pos": "MID",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 28,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Alisson",
+    "pos": "GK",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 33,
+    "inj": 1,
+    "wc": 2
+   }
+  ],
+  "Morocco": [
+   {
+    "n": "Achraf Hakimi",
+    "pos": "DEF",
+    "q": 9,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "FRA",
+    "age": 27,
+    "inj": 1,
+    "wc": 2
+   },
+   {
+    "n": "Brahim Diaz",
+    "pos": "MID",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ESP",
+    "age": 26,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Yassine Bounou",
+    "pos": "GK",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "SAU",
+    "age": 35,
+    "inj": 1,
+    "wc": 2,
+    "mental": 1
+   },
+   {
+    "n": "Azzedine Ounahi",
+    "pos": "MID",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "GRE",
+    "age": 26,
+    "inj": 1,
+    "wc": 1
+   }
+  ],
+  "Scotland": [
+   {
+    "n": "Scott McTominay",
+    "pos": "MID",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ITA",
+    "age": 29,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "John McGinn",
+    "pos": "MID",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 31,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Andy Robertson",
+    "pos": "DEF",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 32,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Che Adams",
+    "pos": "FWD",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ITA",
+    "age": 29,
+    "inj": 1,
+    "wc": 0
+   }
+  ],
+  "Haiti": [
+   {
+    "n": "Duckens Nazon",
+    "pos": "FWD",
+    "q": 5,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "OTHER",
+    "age": 32,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Frantzdy Pierrot",
+    "pos": "FWD",
+    "q": 5,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "GRE",
+    "age": 31,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Danley Jean Jacques",
+    "pos": "MID",
+    "q": 5,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "FRA",
+    "age": 26,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Josue Casimir",
+    "pos": "FWD",
+    "q": 5,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "FRA",
+    "age": 24,
+    "inj": 1,
+    "wc": 0
+   }
+  ],
+  "Turkiye": [
+   {
+    "n": "Arda Guler",
+    "pos": "MID",
+    "q": 9,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ESP",
+    "age": 21,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Hakan Calhanoglu",
+    "pos": "MID",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ITA",
+    "age": 32,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Kenan Yildiz",
+    "pos": "FWD",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ITA",
+    "age": 21,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Ferdi Kadioglu",
+    "pos": "DEF",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 26,
+    "inj": 1,
+    "wc": 0
+   }
+  ],
+  "Paraguay": [
+   {
+    "n": "Julio Enciso",
+    "pos": "MID",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "FRA",
+    "age": 22,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Miguel Almiron",
+    "pos": "MID",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "MLS",
+    "age": 32,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Gustavo Gomez",
+    "pos": "DEF",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "BRA",
+    "age": 32,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Antonio Sanabria",
+    "pos": "FWD",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ITA",
+    "age": 30,
+    "inj": 1,
+    "wc": 0
+   }
+  ],
+  "Australia": [
+   {
+    "n": "Jackson Irvine",
+    "pos": "MID",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "GER",
+    "age": 33,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Mathew Ryan",
+    "pos": "GK",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "FRA",
+    "age": 34,
+    "inj": 1,
+    "wc": 2
+   },
+   {
+    "n": "Nestory Irankunda",
+    "pos": "FWD",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG2",
+    "age": 20,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Craig Goodwin",
+    "pos": "FWD",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "AUS",
+    "age": 34,
+    "inj": 1,
+    "wc": 1
+   }
+  ],
+  "United States": [
+   {
+    "n": "Christian Pulisic",
+    "pos": "FWD",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ITA",
+    "age": 27,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Weston McKennie",
+    "pos": "MID",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ITA",
+    "age": 27,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Antonee Robinson",
+    "pos": "DEF",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 28,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Folarin Balogun",
+    "pos": "FWD",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "FRA",
+    "age": 24,
+    "inj": 1,
+    "wc": 0
+   }
+  ],
+  "Ecuador": [
+   {
+    "n": "Moises Caicedo",
+    "pos": "MID",
+    "q": 9,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 24,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Piero Hincapie",
+    "pos": "DEF",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 24,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Kendry Paez",
+    "pos": "MID",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "FRA",
+    "age": 19,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Enner Valencia",
+    "pos": "FWD",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "BRA",
+    "age": 36,
+    "inj": 1,
+    "wc": 3
+   }
+  ],
+  "Germany": [
+   {
+    "n": "Jamal Musiala",
+    "pos": "MID",
+    "q": 9,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "GER",
+    "age": 23,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Florian Wirtz",
+    "pos": "MID",
+    "q": 9,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 23,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Joshua Kimmich",
+    "pos": "MID",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "GER",
+    "age": 31,
+    "inj": 1,
+    "wc": 2
+   },
+   {
+    "n": "Kai Havertz",
+    "pos": "FWD",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 27,
+    "inj": 1,
+    "wc": 2
+   }
+  ],
+  "Ivory Coast": [
+   {
+    "n": "Franck Kessie",
+    "pos": "MID",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "SAU",
+    "age": 29,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Sebastien Haller",
+    "pos": "FWD",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "NED",
+    "age": 32,
+    "inj": 2,
+    "wc": 0
+   },
+   {
+    "n": "Simon Adingra",
+    "pos": "FWD",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 24,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Odilon Kossounou",
+    "pos": "DEF",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ITA",
+    "age": 25,
+    "inj": 1,
+    "wc": 0
+   }
+  ],
+  "Curacao": [
+   {
+    "n": "Juninho Bacuna",
+    "pos": "MID",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG2",
+    "age": 28,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Leandro Bacuna",
+    "pos": "MID",
+    "q": 5,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "OTHER",
+    "age": 34,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Tahith Chong",
+    "pos": "MID",
+    "q": 5,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG2",
+    "age": 26,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Kenji Gorre",
+    "pos": "FWD",
+    "q": 5,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "OTHER",
+    "age": 31,
+    "inj": 1,
+    "wc": 0
+   }
+  ],
+  "Netherlands": [
+   {
+    "n": "Virgil van Dijk",
+    "pos": "DEF",
+    "q": 9,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 34,
+    "inj": 0,
+    "wc": 1
+   },
+   {
+    "n": "Cody Gakpo",
+    "pos": "FWD",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 27,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Frenkie de Jong",
+    "pos": "MID",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ESP",
+    "age": 29,
+    "inj": 1,
+    "wc": 2
+   },
+   {
+    "n": "Xavi Simons",
+    "pos": "MID",
+    "q": 8,
+    "st": "injured",
+    "yel": 0,
+    "ban": 0,
+    "note": "ACL tear, out for tournament",
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 23,
+    "inj": 2,
+    "wc": 1
+   },
+   {
+    "n": "Jurrien Timber",
+    "pos": "DEF",
+    "q": 8,
+    "st": "injured",
+    "yel": 0,
+    "ban": 0,
+    "note": "groin, left camp",
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 25,
+    "inj": 3,
+    "wc": 1
+   }
+  ],
+  "Japan": [
+   {
+    "n": "Takefusa Kubo",
+    "pos": "MID",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ESP",
+    "age": 25,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Kaoru Mitoma",
+    "pos": "FWD",
+    "q": 8,
+    "st": "injured",
+    "yel": 0,
+    "ban": 0,
+    "note": "hamstring, missed final squad",
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 29,
+    "inj": 2,
+    "wc": 1
+   },
+   {
+    "n": "Wataru Endo",
+    "pos": "MID",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 33,
+    "inj": 1,
+    "wc": 2
+   },
+   {
+    "n": "Ayase Ueda",
+    "pos": "FWD",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "NED",
+    "age": 27,
+    "inj": 1,
+    "wc": 1
+   }
+  ],
+  "Sweden": [
+   {
+    "n": "Alexander Isak",
+    "pos": "FWD",
+    "q": 9,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 26,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Viktor Gyokeres",
+    "pos": "FWD",
+    "q": 9,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 28,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Dejan Kulusevski",
+    "pos": "MID",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 26,
+    "inj": 2,
+    "wc": 0
+   },
+   {
+    "n": "Lucas Bergvall",
+    "pos": "MID",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 20,
+    "inj": 1,
+    "wc": 0
+   }
+  ],
+  "Tunisia": [
+   {
+    "n": "Hannibal Mejbri",
+    "pos": "MID",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 23,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Aissa Laidouni",
+    "pos": "MID",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "GER",
+    "age": 29,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Elias Achouri",
+    "pos": "FWD",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "DEN",
+    "age": 27,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Youssef Msakni",
+    "pos": "FWD",
+    "q": 5,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "QAT",
+    "age": 35,
+    "inj": 1,
+    "wc": 2
+   }
+  ],
+  "Belgium": [
+   {
+    "n": "Jeremy Doku",
+    "pos": "FWD",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 24,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Kevin De Bruyne",
+    "pos": "MID",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ITA",
+    "age": 34,
+    "inj": 2,
+    "wc": 3
+   },
+   {
+    "n": "Charles De Ketelaere",
+    "pos": "MID",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ITA",
+    "age": 25,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Romelu Lukaku",
+    "pos": "FWD",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ITA",
+    "age": 33,
+    "inj": 1,
+    "wc": 3,
+    "mental": -1
+   }
+  ],
+  "Iran": [
+   {
+    "n": "Mehdi Taremi",
+    "pos": "FWD",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "GRE",
+    "age": 33,
+    "inj": 1,
+    "wc": 2
+   },
+   {
+    "n": "Sardar Azmoun",
+    "pos": "FWD",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "OTHER",
+    "age": 31,
+    "inj": 1,
+    "wc": 2
+   },
+   {
+    "n": "Alireza Beiranvand",
+    "pos": "GK",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "OTHER",
+    "age": 33,
+    "inj": 1,
+    "wc": 2
+   },
+   {
+    "n": "Saman Ghoddos",
+    "pos": "MID",
+    "q": 5,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "OTHER",
+    "age": 32,
+    "inj": 1,
+    "wc": 2
+   }
+  ],
+  "Egypt": [
+   {
+    "n": "Mohamed Salah",
+    "pos": "FWD",
+    "q": 9,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 34,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Omar Marmoush",
+    "pos": "FWD",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 27,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Mostafa Mohamed",
+    "pos": "FWD",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "FRA",
+    "age": 28,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Mohamed Elneny",
+    "pos": "MID",
+    "q": 5,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "OTHER",
+    "age": 33,
+    "inj": 1,
+    "wc": 1
+   }
+  ],
+  "New Zealand": [
+   {
+    "n": "Chris Wood",
+    "pos": "FWD",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 34,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Liberato Cacace",
+    "pos": "DEF",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ITA",
+    "age": 25,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Marko Stamenic",
+    "pos": "MID",
+    "q": 5,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "DEN",
+    "age": 24,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Sarpreet Singh",
+    "pos": "MID",
+    "q": 5,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "OTHER",
+    "age": 27,
+    "inj": 1,
+    "wc": 0
+   }
+  ],
+  "Spain": [
+   {
+    "n": "Lamine Yamal",
+    "pos": "FWD",
+    "q": 10,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ESP",
+    "age": 18,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Pedri",
+    "pos": "MID",
+    "q": 9,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ESP",
+    "age": 23,
+    "inj": 2,
+    "wc": 1
+   },
+   {
+    "n": "Rodri",
+    "pos": "MID",
+    "q": 9,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 30,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Nico Williams",
+    "pos": "FWD",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ESP",
+    "age": 23,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Fermin Lopez",
+    "pos": "MID",
+    "q": 8,
+    "st": "injured",
+    "yel": 0,
+    "ban": 0,
+    "note": "metatarsal fracture",
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ESP",
+    "age": 23,
+    "inj": 2,
+    "wc": 0
+   }
+  ],
+  "Uruguay": [
+   {
+    "n": "Federico Valverde",
+    "pos": "MID",
+    "q": 9,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ESP",
+    "age": 27,
+    "inj": 1,
+    "wc": 2
+   },
+   {
+    "n": "Darwin Nunez",
+    "pos": "FWD",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "SAU",
+    "age": 26,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Ronald Araujo",
+    "pos": "DEF",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ESP",
+    "age": 27,
+    "inj": 2,
+    "wc": 1
+   },
+   {
+    "n": "Facundo Pellistri",
+    "pos": "FWD",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "GRE",
+    "age": 24,
+    "inj": 1,
+    "wc": 1
+   }
+  ],
+  "Cape Verde": [
+   {
+    "n": "Ryan Mendes",
+    "pos": "FWD",
+    "q": 5,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "OTHER",
+    "age": 36,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Jamiro Monteiro",
+    "pos": "MID",
+    "q": 5,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "MLS",
+    "age": 32,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Logan Costa",
+    "pos": "DEF",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "FRA",
+    "age": 25,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Bebe",
+    "pos": "FWD",
+    "q": 5,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "OTHER",
+    "age": 35,
+    "inj": 1,
+    "wc": 0
+   }
+  ],
+  "Saudi Arabia": [
+   {
+    "n": "Salem Al-Dawsari",
+    "pos": "FWD",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "SAU",
+    "age": 34,
+    "inj": 1,
+    "wc": 2
+   },
+   {
+    "n": "Firas Al-Buraikan",
+    "pos": "FWD",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "SAU",
+    "age": 26,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Mohammed Kanno",
+    "pos": "MID",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "SAU",
+    "age": 31,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Saud Abdulhamid",
+    "pos": "DEF",
+    "q": 5,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "SAU",
+    "age": 26,
+    "inj": 1,
+    "wc": 1
+   }
+  ],
+  "France": [
+   {
+    "n": "Kylian Mbappe",
+    "pos": "FWD",
+    "q": 10,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ESP",
+    "age": 27,
+    "inj": 1,
+    "wc": 2,
+    "mental": 2
+   },
+   {
+    "n": "Ousmane Dembele",
+    "pos": "FWD",
+    "q": 9,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "FRA",
+    "age": 29,
+    "inj": 1,
+    "wc": 2
+   },
+   {
+    "n": "Michael Olise",
+    "pos": "MID",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "GER",
+    "age": 24,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Aurelien Tchouameni",
+    "pos": "MID",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ESP",
+    "age": 26,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Hugo Ekitike",
+    "pos": "FWD",
+    "q": 7,
+    "st": "injured",
+    "yel": 0,
+    "ban": 0,
+    "note": "ruled out injured",
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 24,
+    "inj": 2,
+    "wc": 0
+   }
+  ],
+  "Norway": [
+   {
+    "n": "Erling Haaland",
+    "pos": "FWD",
+    "q": 10,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 25,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Martin Odegaard",
+    "pos": "MID",
+    "q": 9,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 27,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Alexander Sorloth",
+    "pos": "FWD",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ESP",
+    "age": 30,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Antonio Nusa",
+    "pos": "FWD",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "GER",
+    "age": 21,
+    "inj": 1,
+    "wc": 0
+   }
+  ],
+  "Senegal": [
+   {
+    "n": "Sadio Mane",
+    "pos": "FWD",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "SAU",
+    "age": 34,
+    "inj": 1,
+    "wc": 2
+   },
+   {
+    "n": "Nicolas Jackson",
+    "pos": "FWD",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "GER",
+    "age": 25,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Pape Matar Sarr",
+    "pos": "MID",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 23,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Iliman Ndiaye",
+    "pos": "MID",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 26,
+    "inj": 1,
+    "wc": 1
+   }
+  ],
+  "Iraq": [
+   {
+    "n": "Aymen Hussein",
+    "pos": "FWD",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "OTHER",
+    "age": 30,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Ali Jasim",
+    "pos": "FWD",
+    "q": 5,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ITA",
+    "age": 22,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Youssef Amyn",
+    "pos": "MID",
+    "q": 5,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "OTHER",
+    "age": 22,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Jalal Hassan",
+    "pos": "GK",
+    "q": 5,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "OTHER",
+    "age": 34,
+    "inj": 1,
+    "wc": 0
+   }
+  ],
+  "Argentina": [
+   {
+    "n": "Lionel Messi",
+    "pos": "FWD",
+    "q": 9,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "MLS",
+    "age": 38,
+    "inj": 1,
+    "wc": 5,
+    "mental": 1
+   },
+   {
+    "n": "Julian Alvarez",
+    "pos": "FWD",
+    "q": 9,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ESP",
+    "age": 26,
+    "inj": 1,
+    "wc": 1,
+    "mental": 1
+   },
+   {
+    "n": "Enzo Fernandez",
+    "pos": "MID",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 25,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Alexis Mac Allister",
+    "pos": "MID",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 27,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Emiliano Martinez",
+    "pos": "GK",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 33,
+    "inj": 1,
+    "wc": 1,
+    "mental": 2
+   }
+  ],
+  "Austria": [
+   {
+    "n": "David Alaba",
+    "pos": "DEF",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ESP",
+    "age": 33,
+    "inj": 3,
+    "wc": 0
+   },
+   {
+    "n": "Marcel Sabitzer",
+    "pos": "MID",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "GER",
+    "age": 32,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Christoph Baumgartner",
+    "pos": "MID",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "GER",
+    "age": 26,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Marko Arnautovic",
+    "pos": "FWD",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "OTHER",
+    "age": 37,
+    "inj": 1,
+    "wc": 0
+   }
+  ],
+  "Algeria": [
+   {
+    "n": "Riyad Mahrez",
+    "pos": "FWD",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "SAU",
+    "age": 35,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Mohamed Amoura",
+    "pos": "FWD",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "GER",
+    "age": 26,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Amine Gouiri",
+    "pos": "FWD",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "FRA",
+    "age": 26,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Ismael Bennacer",
+    "pos": "MID",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ITA",
+    "age": 28,
+    "inj": 1,
+    "wc": 0
+   }
+  ],
+  "Jordan": [
+   {
+    "n": "Mousa Al-Taamari",
+    "pos": "FWD",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "FRA",
+    "age": 28,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Yazan Al-Naimat",
+    "pos": "FWD",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "QAT",
+    "age": 27,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Ali Olwan",
+    "pos": "FWD",
+    "q": 5,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "OTHER",
+    "age": 28,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Yazan Al-Arab",
+    "pos": "DEF",
+    "q": 5,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "OTHER",
+    "age": 30,
+    "inj": 1,
+    "wc": 0
+   }
+  ],
+  "Portugal": [
+   {
+    "n": "Cristiano Ronaldo",
+    "pos": "FWD",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "SAU",
+    "age": 41,
+    "inj": 0,
+    "wc": 5
+   },
+   {
+    "n": "Bruno Fernandes",
+    "pos": "MID",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 31,
+    "inj": 1,
+    "wc": 2
+   },
+   {
+    "n": "Rafael Leao",
+    "pos": "FWD",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ITA",
+    "age": 27,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Vitinha",
+    "pos": "MID",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "FRA",
+    "age": 26,
+    "inj": 1,
+    "wc": 1
+   }
+  ],
+  "Colombia": [
+   {
+    "n": "Luis Diaz",
+    "pos": "FWD",
+    "q": 9,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "GER",
+    "age": 29,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "James Rodriguez",
+    "pos": "MID",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "MEX",
+    "age": 34,
+    "inj": 1,
+    "wc": 2
+   },
+   {
+    "n": "Jhon Duran",
+    "pos": "FWD",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "SAU",
+    "age": 22,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Richard Rios",
+    "pos": "MID",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "POR",
+    "age": 26,
+    "inj": 1,
+    "wc": 0
+   }
+  ],
+  "Uzbekistan": [
+   {
+    "n": "Abdukodir Khusanov",
+    "pos": "DEF",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 22,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Eldor Shomurodov",
+    "pos": "FWD",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ITA",
+    "age": 30,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Abbosbek Fayzullaev",
+    "pos": "MID",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "RUS",
+    "age": 22,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Otabek Shukurov",
+    "pos": "MID",
+    "q": 5,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "OTHER",
+    "age": 30,
+    "inj": 1,
+    "wc": 0
+   }
+  ],
+  "DR Congo": [
+   {
+    "n": "Yoane Wissa",
+    "pos": "FWD",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 29,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Cedric Bakambu",
+    "pos": "FWD",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ESP",
+    "age": 35,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Chancel Mbemba",
+    "pos": "DEF",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "FRA",
+    "age": 31,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Theo Bongonda",
+    "pos": "FWD",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "OTHER",
+    "age": 30,
+    "inj": 1,
+    "wc": 0
+   }
+  ],
+  "England": [
+   {
+    "n": "Jude Bellingham",
+    "pos": "MID",
+    "q": 9,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ESP",
+    "age": 22,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Harry Kane",
+    "pos": "FWD",
+    "q": 9,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "GER",
+    "age": 32,
+    "inj": 1,
+    "wc": 2
+   },
+   {
+    "n": "Bukayo Saka",
+    "pos": "FWD",
+    "q": 9,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 24,
+    "inj": 1,
+    "wc": 1,
+    "mental": -0.5
+   },
+   {
+    "n": "Declan Rice",
+    "pos": "MID",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 27,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Cole Palmer",
+    "pos": "MID",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 24,
+    "inj": 1,
+    "wc": 0
+   }
+  ],
+  "Croatia": [
+   {
+    "n": "Josko Gvardiol",
+    "pos": "DEF",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 24,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Luka Modric",
+    "pos": "MID",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ITA",
+    "age": 40,
+    "inj": 0,
+    "wc": 4,
+    "mental": 1
+   },
+   {
+    "n": "Mateo Kovacic",
+    "pos": "MID",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 32,
+    "inj": 1,
+    "wc": 3
+   },
+   {
+    "n": "Andrej Kramaric",
+    "pos": "FWD",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "GER",
+    "age": 35,
+    "inj": 1,
+    "wc": 2
+   }
+  ],
+  "Panama": [
+   {
+    "n": "Adalberto Carrasquilla",
+    "pos": "MID",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "MEX",
+    "age": 27,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Michael Murillo",
+    "pos": "DEF",
+    "q": 6,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "FRA",
+    "age": 30,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Jose Fajardo",
+    "pos": "FWD",
+    "q": 5,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "OTHER",
+    "age": 32,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Anibal Godoy",
+    "pos": "MID",
+    "q": 5,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "MLS",
+    "age": 36,
+    "inj": 1,
+    "wc": 1
+   }
+  ],
+  "Ghana": [
+   {
+    "n": "Mohammed Kudus",
+    "pos": "MID",
+    "q": 8,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 25,
+    "inj": 1,
+    "wc": 1
+   },
+   {
+    "n": "Thomas Partey",
+    "pos": "MID",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ESP",
+    "age": 33,
+    "inj": 2,
+    "wc": 1
+   },
+   {
+    "n": "Antoine Semenyo",
+    "pos": "FWD",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ENG",
+    "age": 26,
+    "inj": 1,
+    "wc": 0
+   },
+   {
+    "n": "Inaki Williams",
+    "pos": "FWD",
+    "q": 7,
+    "st": "fit",
+    "yel": 0,
+    "ban": 0,
+    "stats": {
+     "min": 0,
+     "g": 0,
+     "a": 0,
+     "pass": null,
+     "drib": null
+    },
+    "lg": "ESP",
+    "age": 32,
+    "inj": 1,
+    "wc": 1
+   }
+  ]
+ },
+ "leagues": {
+  "ENG": 1.0,
+  "ESP": 0.96,
+  "ITA": 0.94,
+  "GER": 0.93,
+  "FRA": 0.9,
+  "POR": 0.85,
+  "NED": 0.84,
+  "BRA": 0.84,
+  "TUR": 0.82,
+  "BEL": 0.8,
+  "ARG": 0.8,
+  "ENG2": 0.8,
+  "SAU": 0.78,
+  "MEX": 0.78,
+  "MLS": 0.77,
+  "SCO": 0.77,
+  "JPN": 0.75,
+  "DEN": 0.74,
+  "GRE": 0.74,
+  "KOR": 0.73,
+  "RUS": 0.72,
+  "QAT": 0.68,
+  "AUS": 0.68,
+  "EGY": 0.68,
+  "RSA": 0.66,
+  "OTHER": 0.7
+ },
+ "league_comment": "Club-league strength multiplier on player quality: q_eff = q x (1 + (coef-1) x league weight). Update 'lg' when players transfer.",
+ "age_curve": {
+  "GK": [
+   27,
+   34
+  ],
+  "DEF": [
+   25,
+   31
+  ],
+  "MID": [
+   24,
+   30
+  ],
+  "FWD": [
+   23,
+   29
+  ],
+  "pre_decline": 0.015,
+  "post_decline": 0.02,
+  "min_young": 0.85,
+  "min_old": 0.72
+ },
+ "pos_weights": {
+  "GK": 0.8,
+  "DEF": 1.0,
+  "MID": 1.1,
+  "FWD": 1.0
+ },
+ "balance_scale": 55,
+ "inj_comment": "inj = injury proneness 0 (iron) .. 3 (fragile); expected-absence Elo discount + raised for age>32. age as of June 2026.",
+ "exp_comment": "wc = prior World Cups played (capped at 3 in model). mental = big-match temperament -2..+2, ONLY set where strongly documented (shootout records, documented finals performance); default 0 - 'clutch/choker' narratives are mostly noise. Star-dependence penalty replaces naive 'star gets marked' (already priced into Elo)."
+}

@@ -1,0 +1,7 @@
+{
+  "comment": "Played match results. 'applied': true means this result is already reflected in the Elo snapshot in teams.json (do not double-count). New results added after a snapshot should have applied=false; the engine will update Elo itself.",
+  "matches": [
+    {"date": "2026-06-11", "stage": "group", "group": "A", "home": "Mexico", "away": "South Africa", "hs": 2, "as": 0, "applied": true},
+    {"date": "2026-06-11", "stage": "group", "group": "A", "home": "South Korea", "away": "Czechia", "hs": 2, "as": 1, "applied": true}
+  ]
+}

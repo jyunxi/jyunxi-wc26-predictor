@@ -1,0 +1,918 @@
+{
+ "comment": "Referee assignments + betting-market signals. FIFA announced the full officials pool 2026-04-09 (52 referees); per-match assignments are published 1-2 days before kickoff and added here by the daily update. Referee stats are NEUTRAL descriptive data (cards/pens/upset rate in matches officiated) - small variance effect only, NOT a corruption score: per-referee samples are far too small to prove anything, and labeling individuals as fixers would be defamation. Market signals: large reported odds moves (sharp money) blended into match win expectancy; big model-vs-market divergence raises a watch flag - it means the market knows something (lineup, motivation, or in rare cases worse), not proof of fixing.",
+ "pool_announced": "2026-04-09",
+ "assignment_practice": "per-match referee assignments published 1-2 days before each match",
+ "baseline": {
+  "cards_per_match": 4.2,
+  "pens_rate": 0.3,
+  "upset_rate": 0.26
+ },
+ "referees": {},
+ "assignments": {},
+ "market": {
+  "Canada|Bosnia and Herzegovina": {
+   "we_home": 0.6562,
+   "ph": 0.5184,
+   "pa": 0.206,
+   "pd": 0.2755,
+   "odds": [
+    1.86,
+    4.68,
+    3.5
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "United States|Paraguay": {
+   "we_home": 0.6107,
+   "ph": 0.4666,
+   "pa": 0.2451,
+   "pd": 0.2883,
+   "odds": [
+    2.07,
+    3.94,
+    3.35
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Qatar|Switzerland": {
+   "we_home": 0.1457,
+   "ph": 0.0746,
+   "pa": 0.7833,
+   "pd": 0.1421,
+   "odds": [
+    12.91,
+    1.23,
+    6.78
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Brazil|Morocco": {
+   "we_home": 0.7108,
+   "ph": 0.5854,
+   "pa": 0.1637,
+   "pd": 0.2509,
+   "odds": [
+    1.65,
+    5.9,
+    3.85
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Haiti|Scotland": {
+   "we_home": 0.2772,
+   "ph": 0.1641,
+   "pa": 0.6097,
+   "pd": 0.2261,
+   "odds": [
+    5.87,
+    1.58,
+    4.26
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Australia|Turkiye": {
+   "we_home": 0.3175,
+   "ph": 0.1907,
+   "pa": 0.5556,
+   "pd": 0.2537,
+   "odds": [
+    5.07,
+    1.74,
+    3.81
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Germany|Curacao": {
+   "we_home": 0.9512,
+   "ph": 0.9258,
+   "pa": 0.0235,
+   "pd": 0.0507,
+   "odds": [
+    1.04,
+    41.0,
+    19.0
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Netherlands|Japan": {
+   "we_home": 0.6073,
+   "ph": 0.4738,
+   "pa": 0.2591,
+   "pd": 0.267,
+   "odds": [
+    2.04,
+    3.73,
+    3.62
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Ivory Coast|Ecuador": {
+   "we_home": 0.4337,
+   "ph": 0.2621,
+   "pa": 0.3948,
+   "pd": 0.343,
+   "odds": [
+    3.69,
+    2.45,
+    2.82
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Sweden|Tunisia": {
+   "we_home": 0.644,
+   "ph": 0.5062,
+   "pa": 0.2183,
+   "pd": 0.2755,
+   "odds": [
+    1.91,
+    4.43,
+    3.51
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Spain|Cape Verde": {
+   "we_home": 0.9253,
+   "ph": 0.8844,
+   "pa": 0.0337,
+   "pd": 0.082,
+   "odds": [
+    1.08,
+    28.37,
+    11.65
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Belgium|Egypt": {
+   "we_home": 0.7084,
+   "ph": 0.5881,
+   "pa": 0.1713,
+   "pd": 0.2405,
+   "odds": [
+    1.64,
+    5.63,
+    4.01
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Saudi Arabia|Uruguay": {
+   "we_home": 0.232,
+   "ph": 0.1242,
+   "pa": 0.6602,
+   "pd": 0.2156,
+   "odds": [
+    7.76,
+    1.46,
+    4.47
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Iran|New Zealand": {
+   "we_home": 0.6614,
+   "ph": 0.5265,
+   "pa": 0.2037,
+   "pd": 0.2699,
+   "odds": [
+    1.83,
+    4.73,
+    3.57
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "France|Senegal": {
+   "we_home": 0.7616,
+   "ph": 0.6543,
+   "pa": 0.131,
+   "pd": 0.2147,
+   "odds": [
+    1.47,
+    7.34,
+    4.48
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Iraq|Norway": {
+   "we_home": 0.1327,
+   "ph": 0.0668,
+   "pa": 0.8015,
+   "pd": 0.1317,
+   "odds": [
+    14.4,
+    1.2,
+    7.3
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Argentina|Algeria": {
+   "we_home": 0.788,
+   "ph": 0.6823,
+   "pa": 0.1063,
+   "pd": 0.2114,
+   "odds": [
+    1.41,
+    9.05,
+    4.55
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Austria|Jordan": {
+   "we_home": 0.8059,
+   "ph": 0.7178,
+   "pa": 0.106,
+   "pd": 0.1762,
+   "odds": [
+    1.34,
+    9.07,
+    5.46
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Portugal|DR Congo": {
+   "we_home": 0.835,
+   "ph": 0.7523,
+   "pa": 0.0823,
+   "pd": 0.1654,
+   "odds": [
+    1.28,
+    11.7,
+    5.82
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "England|Croatia": {
+   "we_home": 0.6817,
+   "ph": 0.5579,
+   "pa": 0.1946,
+   "pd": 0.2475,
+   "odds": [
+    1.73,
+    4.96,
+    3.9
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Ghana|Panama": {
+   "we_home": 0.5817,
+   "ph": 0.4439,
+   "pa": 0.2805,
+   "pd": 0.2757,
+   "odds": [
+    2.18,
+    3.45,
+    3.51
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Uzbekistan|Colombia": {
+   "we_home": 0.2065,
+   "ph": 0.1049,
+   "pa": 0.6918,
+   "pd": 0.2033,
+   "odds": [
+    9.17,
+    1.39,
+    4.73
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Czechia|South Africa": {
+   "we_home": 0.6999,
+   "ph": 0.5825,
+   "pa": 0.1827,
+   "pd": 0.2348,
+   "odds": [
+    1.6,
+    5.1,
+    3.97
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Switzerland|Bosnia and Herzegovina": {
+   "we_home": 0.7051,
+   "ph": 0.5865,
+   "pa": 0.1763,
+   "pd": 0.2373,
+   "odds": [
+    1.59,
+    5.29,
+    3.93
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Canada|Qatar": {
+   "we_home": 0.8133,
+   "ph": 0.7223,
+   "pa": 0.0958,
+   "pd": 0.182,
+   "odds": [
+    1.29,
+    9.73,
+    5.12
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Mexico|South Korea": {
+   "we_home": 0.6154,
+   "ph": 0.4752,
+   "pa": 0.2444,
+   "pd": 0.2803,
+   "odds": [
+    1.97,
+    3.83,
+    3.34
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "United States|Australia": {
+   "we_home": 0.6645,
+   "ph": 0.5463,
+   "pa": 0.2172,
+   "pd": 0.2365,
+   "odds": [
+    1.71,
+    4.3,
+    3.95
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Scotland|Morocco": {
+   "we_home": 0.3742,
+   "ph": 0.2281,
+   "pa": 0.4796,
+   "pd": 0.2923,
+   "odds": [
+    4.1,
+    1.95,
+    3.2
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Turkiye|Paraguay": {
+   "we_home": 0.5809,
+   "ph": 0.4317,
+   "pa": 0.27,
+   "pd": 0.2983,
+   "odds": [
+    2.17,
+    3.47,
+    3.14
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Netherlands|Sweden": {
+   "we_home": 0.6955,
+   "ph": 0.5795,
+   "pa": 0.1885,
+   "pd": 0.2321,
+   "odds": [
+    1.61,
+    4.95,
+    4.02
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Germany|Ivory Coast": {
+   "we_home": 0.7161,
+   "ph": 0.6075,
+   "pa": 0.1754,
+   "pd": 0.2172,
+   "odds": [
+    1.53,
+    5.3,
+    4.28
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Ecuador|Curacao": {
+   "we_home": 0.8565,
+   "ph": 0.7918,
+   "pa": 0.0788,
+   "pd": 0.1294,
+   "odds": [
+    1.18,
+    11.86,
+    7.22
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Tunisia|Japan": {
+   "we_home": 0.308,
+   "ph": 0.1775,
+   "pa": 0.5614,
+   "pd": 0.2611,
+   "odds": [
+    5.25,
+    1.66,
+    3.57
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Spain|Saudi Arabia": {
+   "we_home": 0.9112,
+   "ph": 0.8655,
+   "pa": 0.0431,
+   "pd": 0.0914,
+   "odds": [
+    1.09,
+    21.91,
+    10.32
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Belgium|Iran": {
+   "we_home": 0.776,
+   "ph": 0.6744,
+   "pa": 0.1224,
+   "pd": 0.2032,
+   "odds": [
+    1.38,
+    7.6,
+    4.58
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Uruguay|Cape Verde": {
+   "we_home": 0.7748,
+   "ph": 0.6732,
+   "pa": 0.1235,
+   "pd": 0.2033,
+   "odds": [
+    1.38,
+    7.52,
+    4.57
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "New Zealand|Egypt": {
+   "we_home": 0.338,
+   "ph": 0.2155,
+   "pa": 0.5395,
+   "pd": 0.245,
+   "odds": [
+    4.33,
+    1.73,
+    3.81
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Argentina|Austria": {
+   "we_home": 0.7069,
+   "ph": 0.5818,
+   "pa": 0.168,
+   "pd": 0.2502,
+   "odds": [
+    1.6,
+    5.54,
+    3.72
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "France|Iraq": {
+   "we_home": 0.904,
+   "ph": 0.8465,
+   "pa": 0.0384,
+   "pd": 0.115,
+   "odds": [
+    1.11,
+    24.44,
+    8.17
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Norway|Senegal": {
+   "we_home": 0.5813,
+   "ph": 0.4479,
+   "pa": 0.2854,
+   "pd": 0.2667,
+   "odds": [
+    2.09,
+    3.28,
+    3.51
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Jordan|Algeria": {
+   "we_home": 0.2611,
+   "ph": 0.1498,
+   "pa": 0.6275,
+   "pd": 0.2227,
+   "odds": [
+    6.2,
+    1.48,
+    4.17
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Portugal|Uzbekistan": {
+   "we_home": 0.8415,
+   "ph": 0.7684,
+   "pa": 0.0854,
+   "pd": 0.1462,
+   "odds": [
+    1.21,
+    10.89,
+    6.36
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "England|Ghana": {
+   "we_home": 0.8084,
+   "ph": 0.721,
+   "pa": 0.1042,
+   "pd": 0.1748,
+   "odds": [
+    1.29,
+    8.93,
+    5.32
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Panama|Croatia": {
+   "we_home": 0.2741,
+   "ph": 0.1478,
+   "pa": 0.5997,
+   "pd": 0.2526,
+   "odds": [
+    6.29,
+    1.55,
+    3.68
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Colombia|DR Congo": {
+   "we_home": 0.761,
+   "ph": 0.651,
+   "pa": 0.1289,
+   "pd": 0.2201,
+   "odds": [
+    1.43,
+    7.22,
+    4.23
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Bosnia and Herzegovina|Qatar": {
+   "we_home": 0.7008,
+   "ph": 0.5709,
+   "pa": 0.1692,
+   "pd": 0.2599,
+   "odds": [
+    1.63,
+    5.5,
+    3.58
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Switzerland|Canada": {
+   "we_home": 0.5869,
+   "ph": 0.4462,
+   "pa": 0.2724,
+   "pd": 0.2814,
+   "odds": [
+    2.1,
+    3.44,
+    3.33
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Scotland|Brazil": {
+   "we_home": 0.2574,
+   "ph": 0.1633,
+   "pa": 0.6486,
+   "pd": 0.1881,
+   "odds": [
+    5.68,
+    1.43,
+    4.93
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Morocco|Haiti": {
+   "we_home": 0.8089,
+   "ph": 0.7183,
+   "pa": 0.1004,
+   "pd": 0.1813,
+   "odds": [
+    1.29,
+    9.23,
+    5.11
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Czechia|Mexico": {
+   "we_home": 0.3528,
+   "ph": 0.2172,
+   "pa": 0.5115,
+   "pd": 0.2713,
+   "odds": [
+    4.31,
+    1.83,
+    3.45
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "South Africa|South Korea": {
+   "we_home": 0.2894,
+   "ph": 0.1685,
+   "pa": 0.5896,
+   "pd": 0.242,
+   "odds": [
+    5.53,
+    1.58,
+    3.85
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Curacao|Ivory Coast": {
+   "we_home": 0.1526,
+   "ph": 0.0806,
+   "pa": 0.7755,
+   "pd": 0.1438,
+   "odds": [
+    11.54,
+    1.2,
+    6.47
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Ecuador|Germany": {
+   "we_home": 0.3398,
+   "ph": 0.2124,
+   "pa": 0.5328,
+   "pd": 0.2548,
+   "odds": [
+    4.39,
+    1.75,
+    3.66
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Japan|Sweden": {
+   "we_home": 0.5912,
+   "ph": 0.4523,
+   "pa": 0.2698,
+   "pd": 0.2778,
+   "odds": [
+    2.07,
+    3.47,
+    3.37
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Tunisia|Netherlands": {
+   "we_home": 0.258,
+   "ph": 0.1479,
+   "pa": 0.6319,
+   "pd": 0.2201,
+   "odds": [
+    6.28,
+    1.47,
+    4.22
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Paraguay|Australia": {
+   "we_home": 0.5955,
+   "ph": 0.4486,
+   "pa": 0.2576,
+   "pd": 0.2939,
+   "odds": [
+    2.09,
+    3.64,
+    3.19
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Turkiye|United States": {
+   "we_home": 0.5093,
+   "ph": 0.3768,
+   "pa": 0.3581,
+   "pd": 0.2651,
+   "odds": [
+    2.49,
+    2.62,
+    3.54
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Norway|France": {
+   "we_home": 0.3569,
+   "ph": 0.2248,
+   "pa": 0.511,
+   "pd": 0.2642,
+   "odds": [
+    4.16,
+    1.83,
+    3.54
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Senegal|Iraq": {
+   "we_home": 0.7826,
+   "ph": 0.683,
+   "pa": 0.1177,
+   "pd": 0.1993,
+   "odds": [
+    1.36,
+    7.89,
+    4.66
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Cape Verde|Saudi Arabia": {
+   "we_home": 0.5203,
+   "ph": 0.3768,
+   "pa": 0.3363,
+   "pd": 0.2869,
+   "odds": [
+    2.49,
+    2.79,
+    3.27
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Uruguay|Spain": {
+   "we_home": 0.3012,
+   "ph": 0.1808,
+   "pa": 0.5785,
+   "pd": 0.2407,
+   "odds": [
+    5.15,
+    1.61,
+    3.87
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "New Zealand|Belgium": {
+   "we_home": 0.177,
+   "ph": 0.096,
+   "pa": 0.7421,
+   "pd": 0.1619,
+   "odds": [
+    9.66,
+    1.25,
+    5.73
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Egypt|Iran": {
+   "we_home": 0.5791,
+   "ph": 0.4223,
+   "pa": 0.2641,
+   "pd": 0.3136,
+   "odds": [
+    2.22,
+    3.55,
+    2.99
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Croatia|Ghana": {
+   "we_home": 0.707,
+   "ph": 0.5835,
+   "pa": 0.1695,
+   "pd": 0.247,
+   "odds": [
+    1.6,
+    5.51,
+    3.78
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Panama|England": {
+   "we_home": 0.1955,
+   "ph": 0.1228,
+   "pa": 0.7318,
+   "pd": 0.1454,
+   "odds": [
+    7.57,
+    1.27,
+    6.39
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Colombia|Portugal": {
+   "we_home": 0.4144,
+   "ph": 0.271,
+   "pa": 0.4423,
+   "pd": 0.2867,
+   "odds": [
+    3.46,
+    2.12,
+    3.27
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "DR Congo|Uzbekistan": {
+   "we_home": 0.551,
+   "ph": 0.4097,
+   "pa": 0.3076,
+   "pd": 0.2826,
+   "odds": [
+    2.29,
+    3.05,
+    3.32
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Algeria|Austria": {
+   "we_home": 0.4053,
+   "ph": 0.2506,
+   "pa": 0.44,
+   "pd": 0.3093,
+   "odds": [
+    3.74,
+    2.13,
+    3.03
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "Jordan|Argentina": {
+   "we_home": 0.1343,
+   "ph": 0.0694,
+   "pa": 0.8008,
+   "pd": 0.1297,
+   "odds": [
+    13.38,
+    1.16,
+    7.16
+   ],
+   "date": "2026-06-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  }
+ },
+ "odds_api": {
+  "provider": "the-odds-api.com",
+  "sport_key": "soccer_fifa_world_cup",
+  "bookmaker": "pinnacle",
+  "url_template": "https://api.the-odds-api.com/v4/sports/soccer_fifa_world_cup/odds/?apiKey={KEY}&regions=eu&markets=h2h&oddsFormat=decimal&bookmakers=pinnacle",
+  "key_note": "密钥不入库:本地在 data/secrets.json(已gitignore),GitHub Actions 在仓库 Secret ODDS_API_KEY"
+ }
+}

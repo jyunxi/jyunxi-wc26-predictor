@@ -1,0 +1,244 @@
+{
+ "comment": "Soft factors layered on top of Elo. locker room: sum of news impacts x credibility (clamped +-5) -> up to +-locker_scale Elo. fake news: items with credibility < 0.7 are 'rumors' and additionally scaled by rumor_trust (0..1). pedigree: historical World Cup performance index 0-100 -> (pedigree-30)/70 x pedigree_scale Elo.",
+ "weights": {
+  "locker_room": 1.0,
+  "pedigree": 1.0,
+  "rumor_trust": 0.5,
+  "players": 1.0,
+  "league": 1.0,
+  "age": 1.0,
+  "experience": 1.0
+ },
+ "locker_scale": 50,
+ "pedigree_scale": 60,
+ "teams": {
+  "Mexico": {
+   "pedigree": 40,
+   "news": []
+  },
+  "South Korea": {
+   "pedigree": 35,
+   "news": []
+  },
+  "Czechia": {
+   "pedigree": 35,
+   "news": []
+  },
+  "South Africa": {
+   "pedigree": 8,
+   "news": []
+  },
+  "Switzerland": {
+   "pedigree": 30,
+   "news": []
+  },
+  "Canada": {
+   "pedigree": 5,
+   "news": []
+  },
+  "Bosnia and Herzegovina": {
+   "pedigree": 4,
+   "news": []
+  },
+  "Qatar": {
+   "pedigree": 2,
+   "news": []
+  },
+  "Brazil": {
+   "pedigree": 100,
+   "news": [
+    {
+     "text": "Rodrygo (ACL) out for the tournament; Estevao left out injured (talent loss counted in Player layer; residual morale only)",
+     "impact": -0.5,
+     "credibility": 0.95,
+     "source": "ESPN injury tracker"
+    }
+   ]
+  },
+  "Morocco": {
+   "pedigree": 38,
+   "news": []
+  },
+  "Scotland": {
+   "pedigree": 12,
+   "news": []
+  },
+  "Haiti": {
+   "pedigree": 2,
+   "news": []
+  },
+  "Turkiye": {
+   "pedigree": 30,
+   "news": []
+  },
+  "Paraguay": {
+   "pedigree": 25,
+   "news": []
+  },
+  "Australia": {
+   "pedigree": 18,
+   "news": []
+  },
+  "United States": {
+   "pedigree": 30,
+   "news": []
+  },
+  "Ecuador": {
+   "pedigree": 15,
+   "news": []
+  },
+  "Germany": {
+   "pedigree": 95,
+   "news": []
+  },
+  "Ivory Coast": {
+   "pedigree": 8,
+   "news": []
+  },
+  "Curacao": {
+   "pedigree": 1,
+   "news": []
+  },
+  "Netherlands": {
+   "pedigree": 60,
+   "news": [
+    {
+     "text": "Timber left camp injured (groin); Xavi Simons out with ACL tear (talent loss counted in Player layer; residual morale only)",
+     "impact": -0.8,
+     "credibility": 0.95,
+     "source": "ESPN injury tracker"
+    }
+   ]
+  },
+  "Japan": {
+   "pedigree": 28,
+   "news": [
+    {
+     "text": "Mitoma (hamstring) misses final squad (talent loss counted in Player layer; residual morale only)",
+     "impact": -0.3,
+     "credibility": 0.9,
+     "source": "ESPN injury tracker"
+    }
+   ]
+  },
+  "Sweden": {
+   "pedigree": 40,
+   "news": []
+  },
+  "Tunisia": {
+   "pedigree": 10,
+   "news": []
+  },
+  "Belgium": {
+   "pedigree": 45,
+   "news": []
+  },
+  "Iran": {
+   "pedigree": 12,
+   "news": []
+  },
+  "Egypt": {
+   "pedigree": 8,
+   "news": []
+  },
+  "New Zealand": {
+   "pedigree": 6,
+   "news": []
+  },
+  "Spain": {
+   "pedigree": 62,
+   "news": [
+    {
+     "text": "Fermin Lopez out (metatarsal fracture) (talent loss counted in Player layer; residual morale only)",
+     "impact": -0.3,
+     "credibility": 0.95,
+     "source": "ESPN injury tracker"
+    }
+   ]
+  },
+  "Uruguay": {
+   "pedigree": 70,
+   "news": []
+  },
+  "Cape Verde": {
+   "pedigree": 1,
+   "news": []
+  },
+  "Saudi Arabia": {
+   "pedigree": 10,
+   "news": []
+  },
+  "France": {
+   "pedigree": 85,
+   "news": [
+    {
+     "text": "Ekitike ruled out injured (talent loss counted in Player layer; residual morale only)",
+     "impact": -0.3,
+     "credibility": 0.9,
+     "source": "Flashscore"
+    }
+   ]
+  },
+  "Norway": {
+   "pedigree": 10,
+   "news": []
+  },
+  "Senegal": {
+   "pedigree": 28,
+   "news": []
+  },
+  "Iraq": {
+   "pedigree": 3,
+   "news": []
+  },
+  "Argentina": {
+   "pedigree": 90,
+   "news": []
+  },
+  "Austria": {
+   "pedigree": 30,
+   "news": []
+  },
+  "Algeria": {
+   "pedigree": 15,
+   "news": []
+  },
+  "Jordan": {
+   "pedigree": 1,
+   "news": []
+  },
+  "Portugal": {
+   "pedigree": 42,
+   "news": []
+  },
+  "Colombia": {
+   "pedigree": 28,
+   "news": []
+  },
+  "Uzbekistan": {
+   "pedigree": 1,
+   "news": []
+  },
+  "DR Congo": {
+   "pedigree": 3,
+   "news": []
+  },
+  "England": {
+   "pedigree": 65,
+   "news": []
+  },
+  "Croatia": {
+   "pedigree": 55,
+   "news": []
+  },
+  "Panama": {
+   "pedigree": 2,
+   "news": []
+  },
+  "Ghana": {
+   "pedigree": 25,
+   "news": []
+  }
+ },
+ "player_scale_note": "player availability/form handled by players.json layer"
+}

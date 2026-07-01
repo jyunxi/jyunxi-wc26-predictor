@@ -20,6 +20,76 @@
       "hs": 2,
       "as": 1,
       "applied": true
+    },
+    {
+      "date": "2026-06-30",
+      "stage": "knockout",
+      "group": "",
+      "home": "Ivory Coast",
+      "away": "Norway",
+      "hs": 1,
+      "as": 2,
+      "applied": true
+    },
+    {
+      "date": "2026-06-30",
+      "stage": "knockout",
+      "group": "",
+      "home": "France",
+      "away": "Sweden",
+      "hs": 3,
+      "as": 0,
+      "applied": true
+    },
+    {
+      "date": "2026-06-30",
+      "stage": "knockout",
+      "group": "",
+      "home": "Mexico",
+      "away": "Ecuador",
+      "hs": 2,
+      "as": 0,
+      "applied": true
+    },
+    {
+      "date": "2026-06-29",
+      "stage": "knockout",
+      "group": "",
+      "home": "Brazil",
+      "away": "Japan",
+      "hs": 2,
+      "as": 1,
+      "applied": true
+    },
+    {
+      "date": "2026-06-29",
+      "stage": "knockout",
+      "group": "",
+      "home": "Germany",
+      "away": "Paraguay",
+      "hs": 1,
+      "as": 1,
+      "applied": true
+    },
+    {
+      "date": "2026-06-29",
+      "stage": "knockout",
+      "group": "",
+      "home": "Netherlands",
+      "away": "Morocco",
+      "hs": 1,
+      "as": 1,
+      "applied": true
+    },
+    {
+      "date": "2026-06-28",
+      "stage": "knockout",
+      "group": "",
+      "home": "South Africa",
+      "away": "Canada",
+      "hs": 0,
+      "as": 1,
+      "applied": true
     }
   ]
 }

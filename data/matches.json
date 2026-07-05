@@ -90,6 +90,86 @@
       "hs": 0,
       "as": 1,
       "applied": true
+    },
+    {
+      "date": "2026-07-04",
+      "stage": "knockout",
+      "group": "",
+      "home": "Canada",
+      "away": "Morocco",
+      "hs": 0,
+      "as": 3,
+      "applied": true
+    },
+    {
+      "date": "2026-07-04",
+      "stage": "knockout",
+      "group": "",
+      "home": "Paraguay",
+      "away": "France",
+      "hs": 0,
+      "as": 1,
+      "applied": true
+    },
+    {
+      "date": "2026-07-03",
+      "stage": "knockout",
+      "group": "",
+      "home": "Australia",
+      "away": "Egypt",
+      "hs": 1,
+      "as": 1,
+      "applied": true
+    },
+    {
+      "date": "2026-07-03",
+      "stage": "knockout",
+      "group": "",
+      "home": "Argentina",
+      "away": "Cape Verde",
+      "hs": 3,
+      "as": 2,
+      "applied": true
+    },
+    {
+      "date": "2026-07-03",
+      "stage": "knockout",
+      "group": "",
+      "home": "Colombia",
+      "away": "Ghana",
+      "hs": 1,
+      "as": 0,
+      "applied": true
+    },
+    {
+      "date": "2026-07-02",
+      "stage": "knockout",
+      "group": "",
+      "home": "Spain",
+      "away": "Austria",
+      "hs": 3,
+      "as": 0,
+      "applied": true
+    },
+    {
+      "date": "2026-07-02",
+      "stage": "knockout",
+      "group": "",
+      "home": "Portugal",
+      "away": "Croatia",
+      "hs": 2,
+      "as": 1,
+      "applied": true
+    },
+    {
+      "date": "2026-07-02",
+      "stage": "knockout",
+      "group": "",
+      "home": "Switzerland",
+      "away": "Algeria",
+      "hs": 2,
+      "as": 0,
+      "applied": true
     }
   ]
 }

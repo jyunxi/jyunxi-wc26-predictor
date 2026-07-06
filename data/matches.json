@@ -170,6 +170,26 @@
       "hs": 2,
       "as": 0,
       "applied": true
+    },
+    {
+      "date": "2026-07-05",
+      "stage": "knockout",
+      "group": "",
+      "home": "Brazil",
+      "away": "Norway",
+      "hs": 1,
+      "as": 2,
+      "applied": true
+    },
+    {
+      "date": "2026-07-05",
+      "stage": "knockout",
+      "group": "",
+      "home": "Mexico",
+      "away": "England",
+      "hs": 2,
+      "as": 3,
+      "applied": true
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "elo_snapshot_date": "2026-07-05",
+  "elo_snapshot_date": "2026-07-06",
   "elo_source": "https://www.eloratings.net/World.tsv",
   "hosts": [
     "United States",
@@ -11,7 +11,7 @@
       {
         "name": "Mexico",
         "code": "MX",
-        "elo": 1943.0
+        "elo": 1913.0
       },
       {
         "name": "South Korea",
@@ -26,7 +26,7 @@
       {
         "name": "South Africa",
         "code": "ZA",
-        "elo": 1559.0
+        "elo": 1560.0
       }
     ],
     "B": [
@@ -55,7 +55,7 @@
       {
         "name": "Brazil",
         "code": "BR",
-        "elo": 2031.0
+        "elo": 1993.0
       },
       {
         "name": "Morocco",
@@ -104,7 +104,7 @@
       {
         "name": "Germany",
         "code": "DE",
-        "elo": 1908.0
+        "elo": 1907.0
       },
       {
         "name": "Ivory Coast",
@@ -192,7 +192,7 @@
       {
         "name": "Norway",
         "code": "NO",
-        "elo": 1934.0
+        "elo": 1972.0
       },
       {
         "name": "Senegal",
@@ -253,12 +253,12 @@
       {
         "name": "England",
         "code": "EN",
-        "elo": 2046.0
+        "elo": 2076.0
       },
       {
         "name": "Croatia",
         "code": "HR",
-        "elo": 1882.0
+        "elo": 1881.0
       },
       {
         "name": "Panama",

@@ -210,6 +210,26 @@
       "hs": 1,
       "as": 4,
       "applied": true
+    },
+    {
+      "date": "2026-07-07",
+      "stage": "knockout",
+      "group": "",
+      "home": "Argentina",
+      "away": "Egypt",
+      "hs": 3,
+      "as": 2,
+      "applied": true
+    },
+    {
+      "date": "2026-07-07",
+      "stage": "knockout",
+      "group": "",
+      "home": "Switzerland",
+      "away": "Colombia",
+      "hs": 0,
+      "as": 0,
+      "applied": true
     }
   ]
 }

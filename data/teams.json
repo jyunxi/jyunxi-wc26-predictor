@@ -1,5 +1,5 @@
 {
-  "elo_snapshot_date": "2026-07-07",
+  "elo_snapshot_date": "2026-07-08",
   "elo_source": "https://www.eloratings.net/World.tsv",
   "hosts": [
     "United States",
@@ -33,7 +33,7 @@
       {
         "name": "Switzerland",
         "code": "CH",
-        "elo": 1943.0
+        "elo": 1949.0
       },
       {
         "name": "Canada",
@@ -153,7 +153,7 @@
       {
         "name": "Egypt",
         "code": "EG",
-        "elo": 1747.0
+        "elo": 1742.0
       },
       {
         "name": "New Zealand",
@@ -209,7 +209,7 @@
       {
         "name": "Argentina",
         "code": "AR",
-        "elo": 2151.0
+        "elo": 2156.0
       },
       {
         "name": "Austria",
@@ -236,7 +236,7 @@
       {
         "name": "Colombia",
         "code": "CO",
-        "elo": 2009.0
+        "elo": 2003.0
       },
       {
         "name": "Uzbekistan",
@@ -258,7 +258,7 @@
       {
         "name": "Croatia",
         "code": "HR",
-        "elo": 1881.0
+        "elo": 1882.0
       },
       {
         "name": "Panama",

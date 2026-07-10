@@ -1,5 +1,5 @@
 {
-  "elo_snapshot_date": "2026-07-08",
+  "elo_snapshot_date": "2026-07-10",
   "elo_source": "https://www.eloratings.net/World.tsv",
   "hosts": [
     "United States",
@@ -60,7 +60,7 @@
       {
         "name": "Morocco",
         "code": "MA",
-        "elo": 1921.0
+        "elo": 1901.0
       },
       {
         "name": "Scotland",
@@ -187,7 +187,7 @@
       {
         "name": "France",
         "code": "FR",
-        "elo": 2143.0
+        "elo": 2163.0
       },
       {
         "name": "Norway",
@@ -258,7 +258,7 @@
       {
         "name": "Croatia",
         "code": "HR",
-        "elo": 1882.0
+        "elo": 1881.0
       },
       {
         "name": "Panama",

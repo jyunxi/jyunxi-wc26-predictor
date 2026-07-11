@@ -1,5 +1,5 @@
 {
-  "elo_snapshot_date": "2026-07-10",
+  "elo_snapshot_date": "2026-07-11",
   "elo_source": "https://www.eloratings.net/World.tsv",
   "hosts": [
     "United States",
@@ -143,7 +143,7 @@
       {
         "name": "Belgium",
         "code": "BE",
-        "elo": 1961.0
+        "elo": 1948.0
       },
       {
         "name": "Iran",
@@ -165,7 +165,7 @@
       {
         "name": "Spain",
         "code": "ES",
-        "elo": 2177.0
+        "elo": 2190.0
       },
       {
         "name": "Uruguay",

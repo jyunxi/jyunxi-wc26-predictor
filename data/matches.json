@@ -240,6 +240,16 @@
       "hs": 2,
       "as": 0,
       "applied": true
+    },
+    {
+      "date": "2026-07-10",
+      "stage": "knockout",
+      "group": "",
+      "home": "Spain",
+      "away": "Belgium",
+      "hs": 2,
+      "as": 1,
+      "applied": true
     }
   ]
 }

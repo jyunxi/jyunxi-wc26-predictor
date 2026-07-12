@@ -1181,16 +1181,29 @@
    "note": "Pinnacle盘口(The Odds API),去水隐含概率"
   },
   "France|Spain": {
-   "we_home": 0.554,
-   "ph": 0.4047,
-   "pa": 0.2967,
-   "pd": 0.2986,
+   "we_home": 0.561,
+   "ph": 0.4135,
+   "pa": 0.2915,
+   "pd": 0.295,
    "odds": [
-    2.39,
-    3.26,
-    3.24
+    2.34,
+    3.32,
+    3.28
    ],
-   "date": "2026-07-11",
+   "date": "2026-07-12",
+   "note": "Pinnacle盘口(The Odds API),去水隐含概率"
+  },
+  "England|Argentina": {
+   "we_home": 0.5351,
+   "ph": 0.3765,
+   "pa": 0.3062,
+   "pd": 0.3173,
+   "odds": [
+    2.57,
+    3.16,
+    3.05
+   ],
+   "date": "2026-07-12",
    "note": "Pinnacle盘口(The Odds API),去水隐含概率"
   }
  },

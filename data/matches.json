@@ -250,6 +250,26 @@
       "hs": 2,
       "as": 1,
       "applied": true
+    },
+    {
+      "date": "2026-07-11",
+      "stage": "knockout",
+      "group": "",
+      "home": "Norway",
+      "away": "England",
+      "hs": 1,
+      "as": 2,
+      "applied": true
+    },
+    {
+      "date": "2026-07-11",
+      "stage": "knockout",
+      "group": "",
+      "home": "Argentina",
+      "away": "Switzerland",
+      "hs": 3,
+      "as": 1,
+      "applied": true
     }
   ]
 }

@@ -270,6 +270,16 @@
       "hs": 3,
       "as": 1,
       "applied": true
+    },
+    {
+      "date": "2026-07-14",
+      "stage": "knockout",
+      "group": "",
+      "home": "France",
+      "away": "Spain",
+      "hs": 0,
+      "as": 2,
+      "applied": true
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "elo_snapshot_date": "2026-07-14",
+  "elo_snapshot_date": "2026-07-15",
   "elo_source": "https://www.eloratings.net/World.tsv",
   "hosts": [
     "United States",
@@ -26,7 +26,7 @@
       {
         "name": "South Africa",
         "code": "ZA",
-        "elo": 1559.0
+        "elo": 1560.0
       }
     ],
     "B": [
@@ -165,7 +165,7 @@
       {
         "name": "Spain",
         "code": "ES",
-        "elo": 2190.0
+        "elo": 2232.0
       },
       {
         "name": "Uruguay",
@@ -187,7 +187,7 @@
       {
         "name": "France",
         "code": "FR",
-        "elo": 2163.0
+        "elo": 2121.0
       },
       {
         "name": "Norway",
@@ -258,7 +258,7 @@
       {
         "name": "Croatia",
         "code": "HR",
-        "elo": 1881.0
+        "elo": 1882.0
       },
       {
         "name": "Panama",

@@ -280,6 +280,16 @@
       "hs": 0,
       "as": 2,
       "applied": true
+    },
+    {
+      "date": "2026-07-15",
+      "stage": "knockout",
+      "group": "",
+      "home": "England",
+      "away": "Argentina",
+      "hs": 1,
+      "as": 2,
+      "applied": true
     }
   ]
 }

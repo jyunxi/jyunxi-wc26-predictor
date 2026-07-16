@@ -1,5 +1,5 @@
 {
-  "elo_snapshot_date": "2026-07-15",
+  "elo_snapshot_date": "2026-07-16",
   "elo_source": "https://www.eloratings.net/World.tsv",
   "hosts": [
     "United States",
@@ -209,7 +209,7 @@
       {
         "name": "Argentina",
         "code": "AR",
-        "elo": 2177.0
+        "elo": 2200.0
       },
       {
         "name": "Austria",
@@ -253,7 +253,7 @@
       {
         "name": "England",
         "code": "EN",
-        "elo": 2097.0
+        "elo": 2074.0
       },
       {
         "name": "Croatia",

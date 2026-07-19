@@ -290,6 +290,16 @@
       "hs": 1,
       "as": 2,
       "applied": true
+    },
+    {
+      "date": "2026-07-18",
+      "stage": "knockout",
+      "group": "",
+      "home": "France",
+      "away": "England",
+      "hs": 4,
+      "as": 6,
+      "applied": true
     }
   ]
 }

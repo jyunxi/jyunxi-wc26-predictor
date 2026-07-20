@@ -300,6 +300,16 @@
       "hs": 4,
       "as": 6,
       "applied": true
+    },
+    {
+      "date": "2026-07-19",
+      "stage": "knockout",
+      "group": "",
+      "home": "Spain",
+      "away": "Argentina",
+      "hs": 1,
+      "as": 0,
+      "applied": true
     }
   ]
 }

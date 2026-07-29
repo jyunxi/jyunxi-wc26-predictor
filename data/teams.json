@@ -1,5 +1,5 @@
 {
-  "elo_snapshot_date": "2026-07-28",
+  "elo_snapshot_date": "2026-07-29",
   "elo_source": "https://www.eloratings.net/World.tsv",
   "hosts": [
     "United States",
@@ -26,7 +26,7 @@
       {
         "name": "South Africa",
         "code": "ZA",
-        "elo": 1559.0
+        "elo": 1560.0
       }
     ],
     "B": [
@@ -109,7 +109,7 @@
       {
         "name": "Ivory Coast",
         "code": "CI",
-        "elo": 1727.0
+        "elo": 1728.0
       },
       {
         "name": "Curacao",
@@ -143,7 +143,7 @@
       {
         "name": "Belgium",
         "code": "BE",
-        "elo": 1948.0
+        "elo": 1947.0
       },
       {
         "name": "Iran",
@@ -241,7 +241,7 @@
       {
         "name": "Uzbekistan",
         "code": "UZ",
-        "elo": 1631.0
+        "elo": 1630.0
       },
       {
         "name": "DR Congo",
@@ -258,7 +258,7 @@
       {
         "name": "Croatia",
         "code": "HR",
-        "elo": 1882.0
+        "elo": 1881.0
       },
       {
         "name": "Panama",
@@ -268,7 +268,7 @@
       {
         "name": "Ghana",
         "code": "GH",
-        "elo": 1570.0
+        "elo": 1571.0
       }
     ]
   }

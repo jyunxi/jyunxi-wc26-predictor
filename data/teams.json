@@ -1,5 +1,5 @@
 {
-  "elo_snapshot_date": "2026-08-05",
+  "elo_snapshot_date": "2026-08-06",
   "elo_source": "https://www.eloratings.net/World.tsv",
   "hosts": [
     "United States",
@@ -241,7 +241,7 @@
       {
         "name": "Uzbekistan",
         "code": "UZ",
-        "elo": 1630.0
+        "elo": 1631.0
       },
       {
         "name": "DR Congo",

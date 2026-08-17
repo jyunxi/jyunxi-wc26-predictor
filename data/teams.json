@@ -1,5 +1,5 @@
 {
-  "elo_snapshot_date": "2026-08-16",
+  "elo_snapshot_date": "2026-08-17",
   "elo_source": "https://www.eloratings.net/World.tsv",
   "hosts": [
     "United States",
@@ -11,7 +11,7 @@
       {
         "name": "Mexico",
         "code": "MX",
-        "elo": 1913.0
+        "elo": 1914.0
       },
       {
         "name": "South Korea",
@@ -65,7 +65,7 @@
       {
         "name": "Scotland",
         "code": "SQ",
-        "elo": 1745.0
+        "elo": 1746.0
       },
       {
         "name": "Haiti",
@@ -104,7 +104,7 @@
       {
         "name": "Germany",
         "code": "DE",
-        "elo": 1908.0
+        "elo": 1907.0
       },
       {
         "name": "Ivory Coast",
@@ -192,7 +192,7 @@
       {
         "name": "Norway",
         "code": "NO",
-        "elo": 1952.0
+        "elo": 1951.0
       },
       {
         "name": "Senegal",
@@ -202,7 +202,7 @@
       {
         "name": "Iraq",
         "code": "IQ",
-        "elo": 1560.0
+        "elo": 1561.0
       }
     ],
     "J": [

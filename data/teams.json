@@ -1,5 +1,5 @@
 {
-  "elo_snapshot_date": "2026-08-20",
+  "elo_snapshot_date": "2026-08-21",
   "elo_source": "https://www.eloratings.net/World.tsv",
   "hosts": [
     "United States",
@@ -192,7 +192,7 @@
       {
         "name": "Norway",
         "code": "NO",
-        "elo": 1951.0
+        "elo": 1952.0
       },
       {
         "name": "Senegal",
@@ -241,7 +241,7 @@
       {
         "name": "Uzbekistan",
         "code": "UZ",
-        "elo": 1631.0
+        "elo": 1630.0
       },
       {
         "name": "DR Congo",

@@ -1,5 +1,5 @@
 {
-  "elo_snapshot_date": "2026-08-21",
+  "elo_snapshot_date": "2026-08-22",
   "elo_source": "https://www.eloratings.net/World.tsv",
   "hosts": [
     "United States",
@@ -92,7 +92,7 @@
       {
         "name": "United States",
         "code": "US",
-        "elo": 1747.0
+        "elo": 1746.0
       }
     ],
     "E": [

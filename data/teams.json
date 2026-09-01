@@ -1,5 +1,5 @@
 {
-  "elo_snapshot_date": "2026-08-31",
+  "elo_snapshot_date": "2026-09-01",
   "elo_source": "https://www.eloratings.net/World.tsv",
   "hosts": [
     "United States",
@@ -11,7 +11,7 @@
       {
         "name": "Mexico",
         "code": "MX",
-        "elo": 1914.0
+        "elo": 1913.0
       },
       {
         "name": "South Korea",

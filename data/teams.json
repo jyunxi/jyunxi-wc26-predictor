@@ -1,5 +1,5 @@
 {
-  "elo_snapshot_date": "2026-09-11",
+  "elo_snapshot_date": "2026-09-12",
   "elo_source": "https://www.eloratings.net/World.tsv",
   "hosts": [
     "United States",
@@ -65,7 +65,7 @@
       {
         "name": "Scotland",
         "code": "SQ",
-        "elo": 1746.0
+        "elo": 1745.0
       },
       {
         "name": "Haiti",
@@ -87,7 +87,7 @@
       {
         "name": "Australia",
         "code": "AU",
-        "elo": 1795.0
+        "elo": 1794.0
       },
       {
         "name": "United States",
@@ -121,7 +121,7 @@
       {
         "name": "Netherlands",
         "code": "NL",
-        "elo": 1971.0
+        "elo": 1970.0
       },
       {
         "name": "Japan",
@@ -241,7 +241,7 @@
       {
         "name": "Uzbekistan",
         "code": "UZ",
-        "elo": 1630.0
+        "elo": 1631.0
       },
       {
         "name": "DR Congo",

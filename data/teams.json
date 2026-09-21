@@ -1,5 +1,5 @@
 {
-  "elo_snapshot_date": "2026-09-20",
+  "elo_snapshot_date": "2026-09-21",
   "elo_source": "https://www.eloratings.net/World.tsv",
   "hosts": [
     "United States",
@@ -121,7 +121,7 @@
       {
         "name": "Netherlands",
         "code": "NL",
-        "elo": 1970.0
+        "elo": 1971.0
       },
       {
         "name": "Japan",

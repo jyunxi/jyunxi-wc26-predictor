@@ -1,5 +1,5 @@
 {
-  "elo_snapshot_date": "2026-09-23",
+  "elo_snapshot_date": "2026-09-24",
   "elo_source": "https://www.eloratings.net/World.tsv",
   "hosts": [
     "United States",
@@ -16,7 +16,7 @@
       {
         "name": "South Korea",
         "code": "KR",
-        "elo": 1723.0
+        "elo": 1743.0
       },
       {
         "name": "Czechia",
@@ -99,7 +99,7 @@
       {
         "name": "Ecuador",
         "code": "EC",
-        "elo": 1871.0
+        "elo": 1851.0
       },
       {
         "name": "Germany",
@@ -126,7 +126,7 @@
       {
         "name": "Japan",
         "code": "JP",
-        "elo": 1888.0
+        "elo": 1897.0
       },
       {
         "name": "Sweden",
@@ -158,7 +158,7 @@
       {
         "name": "New Zealand",
         "code": "NZ",
-        "elo": 1534.0
+        "elo": 1531.0
       }
     ],
     "H": [
@@ -170,7 +170,7 @@
       {
         "name": "Uruguay",
         "code": "UY",
-        "elo": 1841.0
+        "elo": 1832.0
       },
       {
         "name": "Cape Verde",
@@ -180,7 +180,7 @@
       {
         "name": "Saudi Arabia",
         "code": "SA",
-        "elo": 1596.0
+        "elo": 1600.0
       }
     ],
     "I": [
@@ -202,7 +202,7 @@
       {
         "name": "Iraq",
         "code": "IQ",
-        "elo": 1561.0
+        "elo": 1556.0
       }
     ],
     "J": [

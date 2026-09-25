@@ -1,5 +1,5 @@
 {
-  "elo_snapshot_date": "2026-09-24",
+  "elo_snapshot_date": "2026-09-25",
   "elo_source": "https://www.eloratings.net/World.tsv",
   "hosts": [
     "United States",
@@ -48,14 +48,14 @@
       {
         "name": "Qatar",
         "code": "QA",
-        "elo": 1411.0
+        "elo": 1441.0
       }
     ],
     "C": [
       {
         "name": "Brazil",
         "code": "BR",
-        "elo": 1993.0
+        "elo": 1990.0
       },
       {
         "name": "Morocco",
@@ -70,7 +70,7 @@
       {
         "name": "Haiti",
         "code": "HT",
-        "elo": 1517.0
+        "elo": 1530.0
       }
     ],
     "D": [
@@ -87,7 +87,7 @@
       {
         "name": "Australia",
         "code": "AU",
-        "elo": 1794.0
+        "elo": 1797.0
       },
       {
         "name": "United States",
@@ -104,24 +104,24 @@
       {
         "name": "Germany",
         "code": "DE",
-        "elo": 1907.0
+        "elo": 1916.0
       },
       {
         "name": "Ivory Coast",
         "code": "CI",
-        "elo": 1728.0
+        "elo": 1739.0
       },
       {
         "name": "Curacao",
         "code": "CW",
-        "elo": 1438.0
+        "elo": 1471.0
       }
     ],
     "F": [
       {
         "name": "Netherlands",
         "code": "NL",
-        "elo": 1971.0
+        "elo": 1962.0
       },
       {
         "name": "Japan",
@@ -136,7 +136,7 @@
       {
         "name": "Tunisia",
         "code": "TN",
-        "elo": 1562.0
+        "elo": 1549.0
       }
     ],
     "G": [
@@ -148,7 +148,7 @@
       {
         "name": "Iran",
         "code": "IR",
-        "elo": 1764.0
+        "elo": 1748.0
       },
       {
         "name": "Egypt",
@@ -192,7 +192,7 @@
       {
         "name": "Norway",
         "code": "NO",
-        "elo": 1952.0
+        "elo": 1962.0
       },
       {
         "name": "Senegal",
@@ -214,7 +214,7 @@
       {
         "name": "Austria",
         "code": "AT",
-        "elo": 1821.0
+        "elo": 1831.0
       },
       {
         "name": "Algeria",
@@ -231,7 +231,7 @@
       {
         "name": "Portugal",
         "code": "PT",
-        "elo": 1995.0
+        "elo": 1998.0
       },
       {
         "name": "Colombia",
@@ -241,12 +241,12 @@
       {
         "name": "Uzbekistan",
         "code": "UZ",
-        "elo": 1631.0
+        "elo": 1647.0
       },
       {
         "name": "DR Congo",
         "code": "CD",
-        "elo": 1704.0
+        "elo": 1709.0
       }
     ],
     "L": [
@@ -268,7 +268,7 @@
       {
         "name": "Ghana",
         "code": "GH",
-        "elo": 1571.0
+        "elo": 1560.0
       }
     ]
   }

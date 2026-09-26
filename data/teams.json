@@ -1,5 +1,5 @@
 {
-  "elo_snapshot_date": "2026-09-25",
+  "elo_snapshot_date": "2026-09-26",
   "elo_source": "https://www.eloratings.net/World.tsv",
   "hosts": [
     "United States",
@@ -43,7 +43,7 @@
       {
         "name": "Bosnia and Herzegovina",
         "code": "BA",
-        "elo": 1605.0
+        "elo": 1616.0
       },
       {
         "name": "Qatar",
@@ -60,7 +60,7 @@
       {
         "name": "Morocco",
         "code": "MA",
-        "elo": 1901.0
+        "elo": 1903.0
       },
       {
         "name": "Scotland",
@@ -77,7 +77,7 @@
       {
         "name": "Turkiye",
         "code": "TR",
-        "elo": 1852.0
+        "elo": 1839.0
       },
       {
         "name": "Paraguay",
@@ -131,7 +131,7 @@
       {
         "name": "Sweden",
         "code": "SE",
-        "elo": 1731.0
+        "elo": 1741.0
       },
       {
         "name": "Tunisia",
@@ -143,7 +143,7 @@
       {
         "name": "Belgium",
         "code": "BE",
-        "elo": 1947.0
+        "elo": 1979.0
       },
       {
         "name": "Iran",
@@ -153,7 +153,7 @@
       {
         "name": "Egypt",
         "code": "EG",
-        "elo": 1742.0
+        "elo": 1728.0
       },
       {
         "name": "New Zealand",
@@ -175,7 +175,7 @@
       {
         "name": "Cape Verde",
         "code": "CV",
-        "elo": 1619.0
+        "elo": 1595.0
       },
       {
         "name": "Saudi Arabia",
@@ -187,7 +187,7 @@
       {
         "name": "France",
         "code": "FR",
-        "elo": 2070.0
+        "elo": 2083.0
       },
       {
         "name": "Norway",
@@ -197,7 +197,7 @@
       {
         "name": "Senegal",
         "code": "SN",
-        "elo": 1816.0
+        "elo": 1800.0
       },
       {
         "name": "Iraq",
@@ -219,7 +219,7 @@
       {
         "name": "Algeria",
         "code": "DZ",
-        "elo": 1756.0
+        "elo": 1759.0
       },
       {
         "name": "Jordan",
@@ -263,7 +263,7 @@
       {
         "name": "Panama",
         "code": "PA",
-        "elo": 1658.0
+        "elo": 1650.0
       },
       {
         "name": "Ghana",

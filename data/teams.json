@@ -1,5 +1,5 @@
 {
-  "elo_snapshot_date": "2026-09-26",
+  "elo_snapshot_date": "2026-09-27",
   "elo_source": "https://www.eloratings.net/World.tsv",
   "hosts": [
     "United States",
@@ -11,7 +11,7 @@
       {
         "name": "Mexico",
         "code": "MX",
-        "elo": 1913.0
+        "elo": 1916.0
       },
       {
         "name": "South Korea",
@@ -21,24 +21,24 @@
       {
         "name": "Czechia",
         "code": "CZ",
-        "elo": 1680.0
+        "elo": 1666.0
       },
       {
         "name": "South Africa",
         "code": "ZA",
-        "elo": 1560.0
+        "elo": 1570.0
       }
     ],
     "B": [
       {
         "name": "Switzerland",
         "code": "CH",
-        "elo": 1928.0
+        "elo": 1942.0
       },
       {
         "name": "Canada",
         "code": "CA",
-        "elo": 1729.0
+        "elo": 1736.0
       },
       {
         "name": "Bosnia and Herzegovina",
@@ -65,7 +65,7 @@
       {
         "name": "Scotland",
         "code": "SQ",
-        "elo": 1745.0
+        "elo": 1747.0
       },
       {
         "name": "Haiti",
@@ -92,7 +92,7 @@
       {
         "name": "United States",
         "code": "US",
-        "elo": 1746.0
+        "elo": 1757.0
       }
     ],
     "E": [
@@ -158,14 +158,14 @@
       {
         "name": "New Zealand",
         "code": "NZ",
-        "elo": 1531.0
+        "elo": 1557.0
       }
     ],
     "H": [
       {
         "name": "Spain",
         "code": "ES",
-        "elo": 2259.0
+        "elo": 2277.0
       },
       {
         "name": "Uruguay",
@@ -180,7 +180,7 @@
       {
         "name": "Saudi Arabia",
         "code": "SA",
-        "elo": 1600.0
+        "elo": 1616.0
       }
     ],
     "I": [
@@ -202,7 +202,7 @@
       {
         "name": "Iraq",
         "code": "IQ",
-        "elo": 1556.0
+        "elo": 1564.0
       }
     ],
     "J": [
@@ -236,7 +236,7 @@
       {
         "name": "Colombia",
         "code": "CO",
-        "elo": 2003.0
+        "elo": 2000.0
       },
       {
         "name": "Uzbekistan",
@@ -253,12 +253,12 @@
       {
         "name": "England",
         "code": "EN",
-        "elo": 2125.0
+        "elo": 2107.0
       },
       {
         "name": "Croatia",
         "code": "HR",
-        "elo": 1881.0
+        "elo": 1895.0
       },
       {
         "name": "Panama",

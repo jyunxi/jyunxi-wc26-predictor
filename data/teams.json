@@ -1,5 +1,5 @@
 {
-  "elo_snapshot_date": "2026-09-27",
+  "elo_snapshot_date": "2026-09-28",
   "elo_source": "https://www.eloratings.net/World.tsv",
   "hosts": [
     "United States",
@@ -16,7 +16,7 @@
       {
         "name": "South Korea",
         "code": "KR",
-        "elo": 1743.0
+        "elo": 1725.0
       },
       {
         "name": "Czechia",
@@ -48,7 +48,7 @@
       {
         "name": "Qatar",
         "code": "QA",
-        "elo": 1441.0
+        "elo": 1449.0
       }
     ],
     "C": [
@@ -70,7 +70,7 @@
       {
         "name": "Haiti",
         "code": "HT",
-        "elo": 1530.0
+        "elo": 1564.0
       }
     ],
     "D": [
@@ -82,7 +82,7 @@
       {
         "name": "Paraguay",
         "code": "PY",
-        "elo": 1814.0
+        "elo": 1821.0
       },
       {
         "name": "Australia",
@@ -104,7 +104,7 @@
       {
         "name": "Germany",
         "code": "DE",
-        "elo": 1916.0
+        "elo": 1884.0
       },
       {
         "name": "Ivory Coast",
@@ -114,19 +114,19 @@
       {
         "name": "Curacao",
         "code": "CW",
-        "elo": 1471.0
+        "elo": 1486.0
       }
     ],
     "F": [
       {
         "name": "Netherlands",
         "code": "NL",
-        "elo": 1962.0
+        "elo": 1974.0
       },
       {
         "name": "Japan",
         "code": "JP",
-        "elo": 1897.0
+        "elo": 1901.0
       },
       {
         "name": "Sweden",
@@ -170,7 +170,7 @@
       {
         "name": "Uruguay",
         "code": "UY",
-        "elo": 1832.0
+        "elo": 1850.0
       },
       {
         "name": "Cape Verde",
@@ -192,7 +192,7 @@
       {
         "name": "Norway",
         "code": "NO",
-        "elo": 1962.0
+        "elo": 1937.0
       },
       {
         "name": "Senegal",
@@ -214,7 +214,7 @@
       {
         "name": "Austria",
         "code": "AT",
-        "elo": 1831.0
+        "elo": 1845.0
       },
       {
         "name": "Algeria",
@@ -224,14 +224,14 @@
       {
         "name": "Jordan",
         "code": "JO",
-        "elo": 1628.0
+        "elo": 1622.0
       }
     ],
     "K": [
       {
         "name": "Portugal",
         "code": "PT",
-        "elo": 1998.0
+        "elo": 2022.0
       },
       {
         "name": "Colombia",

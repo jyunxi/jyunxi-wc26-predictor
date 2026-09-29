@@ -1,5 +1,5 @@
 {
-  "elo_snapshot_date": "2026-09-28",
+  "elo_snapshot_date": "2026-09-29",
   "elo_source": "https://www.eloratings.net/World.tsv",
   "hosts": [
     "United States",
@@ -43,7 +43,7 @@
       {
         "name": "Bosnia and Herzegovina",
         "code": "BA",
-        "elo": 1616.0
+        "elo": 1655.0
       },
       {
         "name": "Qatar",
@@ -55,12 +55,12 @@
       {
         "name": "Brazil",
         "code": "BR",
-        "elo": 1990.0
+        "elo": 2001.0
       },
       {
         "name": "Morocco",
         "code": "MA",
-        "elo": 1903.0
+        "elo": 1904.0
       },
       {
         "name": "Scotland",
@@ -77,7 +77,7 @@
       {
         "name": "Turkiye",
         "code": "TR",
-        "elo": 1839.0
+        "elo": 1794.0
       },
       {
         "name": "Paraguay",
@@ -87,7 +87,7 @@
       {
         "name": "Australia",
         "code": "AU",
-        "elo": 1797.0
+        "elo": 1786.0
       },
       {
         "name": "United States",
@@ -131,19 +131,19 @@
       {
         "name": "Sweden",
         "code": "SE",
-        "elo": 1741.0
+        "elo": 1759.0
       },
       {
         "name": "Tunisia",
         "code": "TN",
-        "elo": 1549.0
+        "elo": 1533.0
       }
     ],
     "G": [
       {
         "name": "Belgium",
         "code": "BE",
-        "elo": 1979.0
+        "elo": 1959.0
       },
       {
         "name": "Iran",
@@ -153,7 +153,7 @@
       {
         "name": "Egypt",
         "code": "EG",
-        "elo": 1728.0
+        "elo": 1732.0
       },
       {
         "name": "New Zealand",
@@ -187,7 +187,7 @@
       {
         "name": "France",
         "code": "FR",
-        "elo": 2083.0
+        "elo": 2103.0
       },
       {
         "name": "Norway",
@@ -197,7 +197,7 @@
       {
         "name": "Senegal",
         "code": "SN",
-        "elo": 1800.0
+        "elo": 1803.0
       },
       {
         "name": "Iraq",
@@ -219,7 +219,7 @@
       {
         "name": "Algeria",
         "code": "DZ",
-        "elo": 1759.0
+        "elo": 1743.0
       },
       {
         "name": "Jordan",
@@ -246,7 +246,7 @@
       {
         "name": "DR Congo",
         "code": "CD",
-        "elo": 1709.0
+        "elo": 1718.0
       }
     ],
     "L": [

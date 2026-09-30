@@ -1,5 +1,5 @@
 {
-  "elo_snapshot_date": "2026-09-29",
+  "elo_snapshot_date": "2026-09-30",
   "elo_source": "https://www.eloratings.net/World.tsv",
   "hosts": [
     "United States",
@@ -11,7 +11,7 @@
       {
         "name": "Mexico",
         "code": "MX",
-        "elo": 1916.0
+        "elo": 1910.0
       },
       {
         "name": "South Korea",
@@ -21,7 +21,7 @@
       {
         "name": "Czechia",
         "code": "CZ",
-        "elo": 1666.0
+        "elo": 1659.0
       },
       {
         "name": "South Africa",
@@ -33,7 +33,7 @@
       {
         "name": "Switzerland",
         "code": "CH",
-        "elo": 1942.0
+        "elo": 1968.0
       },
       {
         "name": "Canada",
@@ -65,7 +65,7 @@
       {
         "name": "Scotland",
         "code": "SQ",
-        "elo": 1747.0
+        "elo": 1721.0
       },
       {
         "name": "Haiti",
@@ -92,7 +92,7 @@
       {
         "name": "United States",
         "code": "US",
-        "elo": 1757.0
+        "elo": 1766.0
       }
     ],
     "E": [
@@ -148,7 +148,7 @@
       {
         "name": "Iran",
         "code": "IR",
-        "elo": 1748.0
+        "elo": 1738.0
       },
       {
         "name": "Egypt",
@@ -165,7 +165,7 @@
       {
         "name": "Spain",
         "code": "ES",
-        "elo": 2277.0
+        "elo": 2281.0
       },
       {
         "name": "Uruguay",
@@ -175,12 +175,12 @@
       {
         "name": "Cape Verde",
         "code": "CV",
-        "elo": 1595.0
+        "elo": 1560.0
       },
       {
         "name": "Saudi Arabia",
         "code": "SA",
-        "elo": 1616.0
+        "elo": 1634.0
       }
     ],
     "I": [
@@ -202,7 +202,7 @@
       {
         "name": "Iraq",
         "code": "IQ",
-        "elo": 1564.0
+        "elo": 1546.0
       }
     ],
     "J": [
@@ -253,12 +253,12 @@
       {
         "name": "England",
         "code": "EN",
-        "elo": 2107.0
+        "elo": 2114.0
       },
       {
         "name": "Croatia",
         "code": "HR",
-        "elo": 1895.0
+        "elo": 1891.0
       },
       {
         "name": "Panama",
@@ -268,7 +268,7 @@
       {
         "name": "Ghana",
         "code": "GH",
-        "elo": 1560.0
+        "elo": 1512.0
       }
     ]
   }

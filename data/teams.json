@@ -1,5 +1,5 @@
 {
-  "elo_snapshot_date": "2026-09-30",
+  "elo_snapshot_date": "2026-10-01",
   "elo_source": "https://www.eloratings.net/World.tsv",
   "hosts": [
     "United States",
@@ -26,7 +26,7 @@
       {
         "name": "South Africa",
         "code": "ZA",
-        "elo": 1570.0
+        "elo": 1579.0
       }
     ],
     "B": [
@@ -48,7 +48,7 @@
       {
         "name": "Qatar",
         "code": "QA",
-        "elo": 1449.0
+        "elo": 1456.0
       }
     ],
     "C": [
@@ -99,7 +99,7 @@
       {
         "name": "Ecuador",
         "code": "EC",
-        "elo": 1851.0
+        "elo": 1857.0
       },
       {
         "name": "Germany",
@@ -126,7 +126,7 @@
       {
         "name": "Japan",
         "code": "JP",
-        "elo": 1901.0
+        "elo": 1895.0
       },
       {
         "name": "Sweden",
@@ -158,7 +158,7 @@
       {
         "name": "New Zealand",
         "code": "NZ",
-        "elo": 1557.0
+        "elo": 1561.0
       }
     ],
     "H": [
@@ -209,7 +209,7 @@
       {
         "name": "Argentina",
         "code": "AR",
-        "elo": 2173.0
+        "elo": 2174.0
       },
       {
         "name": "Austria",
@@ -241,7 +241,7 @@
       {
         "name": "Uzbekistan",
         "code": "UZ",
-        "elo": 1647.0
+        "elo": 1653.0
       },
       {
         "name": "DR Congo",
@@ -263,7 +263,7 @@
       {
         "name": "Panama",
         "code": "PA",
-        "elo": 1650.0
+        "elo": 1646.0
       },
       {
         "name": "Ghana",

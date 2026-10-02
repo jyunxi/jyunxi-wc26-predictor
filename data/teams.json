@@ -1,5 +1,5 @@
 {
-  "elo_snapshot_date": "2026-10-01",
+  "elo_snapshot_date": "2026-10-02",
   "elo_source": "https://www.eloratings.net/World.tsv",
   "hosts": [
     "United States",
@@ -16,7 +16,7 @@
       {
         "name": "South Korea",
         "code": "KR",
-        "elo": 1725.0
+        "elo": 1722.0
       },
       {
         "name": "Czechia",
@@ -70,7 +70,7 @@
       {
         "name": "Haiti",
         "code": "HT",
-        "elo": 1564.0
+        "elo": 1586.0
       }
     ],
     "D": [
@@ -104,7 +104,7 @@
       {
         "name": "Germany",
         "code": "DE",
-        "elo": 1884.0
+        "elo": 1894.0
       },
       {
         "name": "Ivory Coast",
@@ -114,14 +114,14 @@
       {
         "name": "Curacao",
         "code": "CW",
-        "elo": 1486.0
+        "elo": 1494.0
       }
     ],
     "F": [
       {
         "name": "Netherlands",
         "code": "NL",
-        "elo": 1974.0
+        "elo": 1970.0
       },
       {
         "name": "Japan",
@@ -192,7 +192,7 @@
       {
         "name": "Norway",
         "code": "NO",
-        "elo": 1937.0
+        "elo": 1908.0
       },
       {
         "name": "Senegal",
@@ -214,7 +214,7 @@
       {
         "name": "Austria",
         "code": "AT",
-        "elo": 1845.0
+        "elo": 1843.0
       },
       {
         "name": "Algeria",
@@ -231,7 +231,7 @@
       {
         "name": "Portugal",
         "code": "PT",
-        "elo": 2022.0
+        "elo": 2047.0
       },
       {
         "name": "Colombia",
@@ -246,7 +246,7 @@
       {
         "name": "DR Congo",
         "code": "CD",
-        "elo": 1718.0
+        "elo": 1693.0
       }
     ],
     "L": [

@@ -1,5 +1,5 @@
 {
-  "elo_snapshot_date": "2026-10-02",
+  "elo_snapshot_date": "2026-10-03",
   "elo_source": "https://www.eloratings.net/World.tsv",
   "hosts": [
     "United States",
@@ -77,12 +77,12 @@
       {
         "name": "Turkiye",
         "code": "TR",
-        "elo": 1794.0
+        "elo": 1781.0
       },
       {
         "name": "Paraguay",
         "code": "PY",
-        "elo": 1821.0
+        "elo": 1836.0
       },
       {
         "name": "Australia",
@@ -143,7 +143,7 @@
       {
         "name": "Belgium",
         "code": "BE",
-        "elo": 1959.0
+        "elo": 1972.0
       },
       {
         "name": "Iran",
@@ -187,7 +187,7 @@
       {
         "name": "France",
         "code": "FR",
-        "elo": 2103.0
+        "elo": 2088.0
       },
       {
         "name": "Norway",
@@ -236,7 +236,7 @@
       {
         "name": "Colombia",
         "code": "CO",
-        "elo": 2000.0
+        "elo": 1985.0
       },
       {
         "name": "Uzbekistan",

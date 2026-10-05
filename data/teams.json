@@ -1,5 +1,5 @@
 {
-  "elo_snapshot_date": "2026-10-04",
+  "elo_snapshot_date": "2026-10-05",
   "elo_source": "https://www.eloratings.net/World.tsv",
   "hosts": [
     "United States",
@@ -26,7 +26,7 @@
       {
         "name": "South Africa",
         "code": "ZA",
-        "elo": 1579.0
+        "elo": 1595.0
       }
     ],
     "B": [
@@ -60,7 +60,7 @@
       {
         "name": "Morocco",
         "code": "MA",
-        "elo": 1904.0
+        "elo": 1896.0
       },
       {
         "name": "Scotland",
@@ -70,7 +70,7 @@
       {
         "name": "Haiti",
         "code": "HT",
-        "elo": 1586.0
+        "elo": 1563.0
       }
     ],
     "D": [
@@ -99,12 +99,12 @@
       {
         "name": "Ecuador",
         "code": "EC",
-        "elo": 1857.0
+        "elo": 1849.0
       },
       {
         "name": "Germany",
         "code": "DE",
-        "elo": 1894.0
+        "elo": 1895.0
       },
       {
         "name": "Ivory Coast",
@@ -114,19 +114,19 @@
       {
         "name": "Curacao",
         "code": "CW",
-        "elo": 1494.0
+        "elo": 1491.0
       }
     ],
     "F": [
       {
         "name": "Netherlands",
         "code": "NL",
-        "elo": 1970.0
+        "elo": 1974.0
       },
       {
         "name": "Japan",
         "code": "JP",
-        "elo": 1895.0
+        "elo": 1897.0
       },
       {
         "name": "Sweden",
@@ -153,12 +153,12 @@
       {
         "name": "Egypt",
         "code": "EG",
-        "elo": 1732.0
+        "elo": 1716.0
       },
       {
         "name": "New Zealand",
         "code": "NZ",
-        "elo": 1561.0
+        "elo": 1559.0
       }
     ],
     "H": [
@@ -192,12 +192,12 @@
       {
         "name": "Norway",
         "code": "NO",
-        "elo": 1908.0
+        "elo": 1900.0
       },
       {
         "name": "Senegal",
         "code": "SN",
-        "elo": 1803.0
+        "elo": 1805.0
       },
       {
         "name": "Iraq",
@@ -214,7 +214,7 @@
       {
         "name": "Austria",
         "code": "AT",
-        "elo": 1843.0
+        "elo": 1841.0
       },
       {
         "name": "Algeria",
@@ -231,7 +231,7 @@
       {
         "name": "Portugal",
         "code": "PT",
-        "elo": 2047.0
+        "elo": 2055.0
       },
       {
         "name": "Colombia",
@@ -246,7 +246,7 @@
       {
         "name": "DR Congo",
         "code": "CD",
-        "elo": 1693.0
+        "elo": 1687.0
       }
     ],
     "L": [
@@ -263,7 +263,7 @@
       {
         "name": "Panama",
         "code": "PA",
-        "elo": 1646.0
+        "elo": 1654.0
       },
       {
         "name": "Ghana",

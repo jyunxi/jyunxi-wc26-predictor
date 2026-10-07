@@ -1,5 +1,5 @@
 {
-  "elo_snapshot_date": "2026-10-06",
+  "elo_snapshot_date": "2026-10-07",
   "elo_source": "https://www.eloratings.net/World.tsv",
   "hosts": [
     "United States",
@@ -11,17 +11,17 @@
       {
         "name": "Mexico",
         "code": "MX",
-        "elo": 1890.0
+        "elo": 1868.0
       },
       {
         "name": "South Korea",
         "code": "KR",
-        "elo": 1722.0
+        "elo": 1730.0
       },
       {
         "name": "Czechia",
         "code": "CZ",
-        "elo": 1658.0
+        "elo": 1656.0
       },
       {
         "name": "South Africa",
@@ -33,12 +33,12 @@
       {
         "name": "Switzerland",
         "code": "CH",
-        "elo": 1972.0
+        "elo": 1975.0
       },
       {
         "name": "Canada",
         "code": "CA",
-        "elo": 1745.0
+        "elo": 1739.0
       },
       {
         "name": "Bosnia and Herzegovina",
@@ -65,7 +65,7 @@
       {
         "name": "Scotland",
         "code": "SQ",
-        "elo": 1746.0
+        "elo": 1718.0
       },
       {
         "name": "Haiti",
@@ -92,7 +92,7 @@
       {
         "name": "United States",
         "code": "US",
-        "elo": 1786.0
+        "elo": 1792.0
       }
     ],
     "E": [
@@ -165,12 +165,12 @@
       {
         "name": "Spain",
         "code": "ES",
-        "elo": 2282.0
+        "elo": 2287.0
       },
       {
         "name": "Uruguay",
         "code": "UY",
-        "elo": 1850.0
+        "elo": 1851.0
       },
       {
         "name": "Cape Verde",
@@ -180,7 +180,7 @@
       {
         "name": "Saudi Arabia",
         "code": "SA",
-        "elo": 1621.0
+        "elo": 1639.0
       }
     ],
     "I": [
@@ -219,7 +219,7 @@
       {
         "name": "Algeria",
         "code": "DZ",
-        "elo": 1743.0
+        "elo": 1744.0
       },
       {
         "name": "Jordan",
@@ -236,12 +236,12 @@
       {
         "name": "Colombia",
         "code": "CO",
-        "elo": 1985.0
+        "elo": 1990.0
       },
       {
         "name": "Uzbekistan",
         "code": "UZ",
-        "elo": 1653.0
+        "elo": 1645.0
       },
       {
         "name": "DR Congo",
@@ -253,12 +253,12 @@
       {
         "name": "England",
         "code": "EN",
-        "elo": 2144.0
+        "elo": 2146.0
       },
       {
         "name": "Croatia",
         "code": "HR",
-        "elo": 1861.0
+        "elo": 1856.0
       },
       {
         "name": "Panama",
